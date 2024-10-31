@@ -9,12 +9,15 @@ import bulletPoint2 from "./bullet-points/bullet-point-2.svg";
 import bulletPoint3 from "./bullet-points/bullet-point-3.svg";
 
 // Logotypes
-import logoApp from "./branding/logo_app.svg";
-import logoGoogle from "./branding/logo_google.svg";
-import logoSlack from "./branding/logo_slack.svg";
-import logoAmazon from "./branding/logo_amazon.svg";
-import logoZoom from "./branding/logo_zoom.svg";
-import logoNetflix from "./branding/logo_netflix.svg";
+import logoApp from "./branding/favicon.ico";
+import logoReact from "./branding/logo_react.svg";
+import logoGit from "./branding/logo_git.svg";
+import logoPostgre from "./branding/logo_postgre.svg";
+import logoTailwind from "./branding/logo_tailwind.svg";
+import logoSymfony from "./branding/logo_symfony.svg";
+import logoTypeScript from "./branding/logo_typescript.svg";
+import logoMongo from "./branding/logo_mongodb.svg";
+import logoFirebase from "./branding/logo_firebase.svg";
 
 // Icons
 import icoSmartphone from "./ico/ico-smartphone.svg";
@@ -35,11 +38,14 @@ export {
   logoApp,
   grid,
   elipseBlueBlur,
-  logoGoogle,
-  logoSlack,
-  logoAmazon,
-  logoZoom,
-  logoNetflix,
+  logoReact,
+  logoGit,
+  logoPostgre,
+  logoTailwind,
+  logoSymfony,
+  logoTypeScript,
+  logoMongo,
+  logoFirebase,
   icoSmartphone,
   icoGlobe,
   icoDatabase,

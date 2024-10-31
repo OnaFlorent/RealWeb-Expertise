@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="relative">
       <Container className="relative z-10 lg:py-16 space-y-16">
         <div className="flex flex-col lg:flex-row lg:space-x-8 items-center">
-          <div className="order-first mt-8 mb-8 lg:mt-0 lg:order-last">
+          <div className="order-first mt-8 mb-8 lg:mt-0 lg:order-last mx-auto">
             <div className="border-4 hover:border-p-3 bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate">
               <img
                 src={profileImg}
@@ -18,7 +18,7 @@ const Hero = () => {
                 height={200}
               />
               <div className="border-t-2 border-n-1 flex flex-col text-center">
-                <h4 className="h5">Taux journalier</h4>
+                <h4 className="h5">Taux journalier (TJM)</h4>
                 <div className="flex items-baseline justify-center">
                   <h3 className="h3 bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                     €250
@@ -46,7 +46,9 @@ const Hero = () => {
               </div>
             </h1>
             <p className="body-1 text-n-5">
-              Basé sur la métropole Lilloise, dôté d'une certification
+              Développeur Full-Stack freelance certifié en web et web mobile,
+              basé dans la métropole lilloise, je mets mes compétences au
+              service de vos projets numériques.
             </p>
             <div className="flex justify-center lg:justify-start space-x-4">
               <Button theme="primary" href="/">

@@ -12,38 +12,56 @@ import {
   icoSettings,
   icoCable,
   icoX,
-  logoAmazon,
-  logoGoogle,
-  logoNetflix,
-  logoSlack,
-  logoZoom,
+  logoReact,
+  logoGit,
+  logoPostgre,
+  logoTailwind,
+  logoSymfony,
+  logoTypeScript,
+  logoMongo,
+  logoFirebase
 } from "../assets";
 
 export const branding = [
   {
     id: "0",
-    alt: "Logo Google",
-    image: logoGoogle,
+    alt: "Logo Git",
+    image: logoGit,
   },
   {
     id: "1",
-    alt: "Logo Slack",
-    image: logoSlack,
+    alt: "Logo Tailwind",
+    image: logoTailwind,
   },
   {
     id: "2",
-    alt: "Logo Amazon",
-    image: logoAmazon,
+    alt: "Logo React",
+    image: logoReact,
   },
   {
     id: "3",
-    alt: "Logo Zoom",
-    image: logoZoom,
+    alt: "Logo Symfony",
+    image: logoSymfony,
   },
   {
     id: "4",
-    alt: "Logo Netflix",
-    image: logoNetflix,
+    alt: "Logo Postgre",
+    image: logoPostgre,
+  },
+  {
+    id: "5",
+    alt: "Logo TypeScript",
+    image: logoTypeScript,
+  },
+  {
+    id: "6",
+    alt: "Logo Mongo",
+    image: logoMongo,
+  },
+  {
+    id: "7",
+    alt: "Logo Firebase",
+    image: logoFirebase,
   },
 ];
 
@@ -53,21 +71,21 @@ export const features = [
     alt: "Icon Dashboard",
     image: icoGlobe,
     title: "Applications Web",
-    text: "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts and visual mockups.",
+    text: "Mise en place d'application web selon les besoins spécifiques des clients, intégration d'un design responsive pour une compatibilité multi-plateforme.",
   },
   {
     id: "1",
     alt: "Icon Comment",
     image: icoSmartphone,
     title: "App Mobile",
-    text: "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts and visual mockups.",
+    text: "Développement d’applications pour iOS et Android via React Native, offrant des solutions intégrées qui fonctionnent de manière transparente sur différents appareils et systèmes d’exploitation.",
   },
   {
     id: "2",
     alt: "Icon Tailored",
     image: icoCable,
     title: "RESTful API",
-    text: "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts and visual mockups.",
+    text: "Conception et développement d’API pour permettre l’interaction entre différentes applications logicielles de manière sûre et efficace, facilitant ainsi l’intégration des systèmes tiers.",
   },
   {
     id: "3",
@@ -81,7 +99,7 @@ export const features = [
     alt: "Icon Profiles",
     image: icoBasket,
     title: "Solutions E-commerce",
-    text: "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts and visual mockups.",
+    text: "Développement de plateformes de commerce électronique, y compris des paniers d’achat, des systèmes de paiement sécurisés et des outils de gestion des stocks et des expéditions",
   },
   {
     id: "5",
