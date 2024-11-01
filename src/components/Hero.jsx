@@ -6,9 +6,9 @@ import { Grid } from "./theme/Hero";
 const Hero = () => {
   return (
     <div className="relative">
-      <Container className="relative z-10 lg:py-16 space-y-16">
-        <div className="flex flex-col lg:flex-row lg:space-x-8 items-center">
-          <div className="order-first mt-8 mb-8 lg:mt-0 lg:order-last mx-auto">
+      <Container className="relative z-10 lg:py-16 space-y-16 max-w-7xl mx-auto px-4 md:px-6">
+        <div className="flex flex-col lg:flex-row lg:space-x-8 items-center lg:items-start lg:justify-between">
+          <div className="order-first mt-8 mb-8 lg:mt-0 lg:order-last">
             <div className="border-4 hover:border-p-3 bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate">
               <img
                 src={profileImg}
@@ -28,7 +28,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="text-center lg:text-left max-w-3xl mx-auto px-16 lg:px-0 space-y-7">
+          <div className="text-center lg:text-left max-w-3xl mx-auto lg:ml-6 space-y-7">
             <h1 className="h1">
               <div className="flex flex-col">Bonjour! </div>{" "}
               <div>

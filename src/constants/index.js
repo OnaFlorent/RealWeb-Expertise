@@ -27,41 +27,49 @@ export const tools = [
     id: "0",
     alt: "Logo Git",
     image: logoGit,
+    title: "GIT",
   },
   {
     id: "1",
     alt: "Logo Tailwind",
     image: logoTailwind,
+    title: "TAILWIND",
   },
   {
     id: "2",
     alt: "Logo React",
     image: logoReact,
+    title: "REACT",
   },
   {
     id: "3",
     alt: "Logo Php",
     image: logoPhp,
+    title: "SYMFONY",
   },
   {
     id: "4",
     alt: "Logo Postgre",
     image: logoPostgre,
+    title: "POSTGRESQL",
   },
   {
     id: "5",
     alt: "Logo TypeScript",
     image: logoTypeScript,
+    title: "TYPESCRIPT",
   },
   {
     id: "6",
     alt: "Logo Mongo",
     image: logoMongo,
+    title: "MONGODB",
   },
   {
     id: "7",
     alt: "Logo Firebase",
     image: logoFirebase,
+    title: "FIREBASE",
   },
 ];
 
@@ -106,7 +114,7 @@ export const features = [
     alt: "Icon Folders",
     image: icoDatabase,
     title: "Gestion de base de données",
-    text: "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts and visual mockups.",
+    text: "Déploiement, configuration, optimisation et gestion de bases de données, assurant la performance et la disponibilité des données pour les applications web et mobiles.",
   },
 ];
 
