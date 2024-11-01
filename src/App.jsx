@@ -1,4 +1,4 @@
-import { Branding } from "./components/Branding";
+import { Tools } from "./components/Tools";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import Hero from "./components/Hero";
@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Branding />
+      <Tools />
       <Services />
       <Footer />
     </>

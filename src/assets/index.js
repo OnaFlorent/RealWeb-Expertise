@@ -14,7 +14,7 @@ import logoReact from "./branding/logo_react.svg";
 import logoGit from "./branding/logo_git.svg";
 import logoPostgre from "./branding/logo_postgre.svg";
 import logoTailwind from "./branding/logo_tailwind.svg";
-import logoSymfony from "./branding/logo_symfony.svg";
+import logoPhp from "./branding/logo_php.svg";
 import logoTypeScript from "./branding/logo_typescript.svg";
 import logoMongo from "./branding/logo_mongodb.svg";
 import logoFirebase from "./branding/logo_firebase.svg";
@@ -42,7 +42,7 @@ export {
   logoGit,
   logoPostgre,
   logoTailwind,
-  logoSymfony,
+  logoPhp,
   logoTypeScript,
   logoMongo,
   logoFirebase,

@@ -16,13 +16,13 @@ import {
   logoGit,
   logoPostgre,
   logoTailwind,
-  logoSymfony,
+  logoPhp,
   logoTypeScript,
   logoMongo,
   logoFirebase
 } from "../assets";
 
-export const branding = [
+export const tools = [
   {
     id: "0",
     alt: "Logo Git",
@@ -40,8 +40,8 @@ export const branding = [
   },
   {
     id: "3",
-    alt: "Logo Symfony",
-    image: logoSymfony,
+    alt: "Logo Php",
+    image: logoPhp,
   },
   {
     id: "4",
