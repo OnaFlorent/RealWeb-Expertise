@@ -18,17 +18,6 @@ export const Footer = () => {
             </a>
           ))}
         </div>
-        <div className="space-x-4">
-          <a href="#/" target="_blank" rel="noreferrer">
-            CGU / CGV
-          </a>
-          <a href="#/" target="_blank" rel="noreferrer">
-            Politique de confidentialité
-          </a>
-          <a href="#/" target="_blank" rel="noreferrer">
-            Contact
-          </a>
-        </div>
         <div>© 2024 RealWeb Studio - Tous droits réservés.</div>
       </Container>
     </div>

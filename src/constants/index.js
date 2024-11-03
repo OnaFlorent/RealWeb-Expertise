@@ -78,8 +78,8 @@ export const features = [
     id: "0",
     alt: "Icon Dashboard",
     image: icoGlobe,
-    title: "Applications Web",
-    text: "Mise en place d'application web selon les besoins spécifiques des clients, intégration d'un design responsive pour une compatibilité multi-plateforme.",
+    title: "Intégration Web",
+    text: "Développement et déploiement d'application web selon les besoins spécifiques des clients, intégration d'un design responsive pour une compatibilité multi-plateforme.",
   },
   {
     id: "1",
