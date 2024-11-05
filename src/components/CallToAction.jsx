@@ -7,7 +7,7 @@ export const CallToAction = ({ minify = false }) => {
     <Container>
       <div className="max-w-4xl mx-auto py-5 lg:py-10">
         <div
-          className={`flex flex-col items-center rounded-xl lg:rounded-3xl bg-gradient-to-tl from-p-3 to-p-4 p-6 lg:p-16 gap-8
+          className={`flex flex-col items-center rounded-xl lg:rounded-2xl bg-gradient-to-tl from-p-3 to-p-4 p-6 lg:p-12 gap-8
             ${
               !minify
                 ? "flex flex-col items-center"

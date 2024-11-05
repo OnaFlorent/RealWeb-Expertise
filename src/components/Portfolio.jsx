@@ -25,18 +25,15 @@ export const Portfolio = () => {
                 }
               }}
             >
-              {/* Image de fond */}
               <img
                 src={work.image}
                 alt={work.alt}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
-
-              {/* Overlay qui apparaît au survol avec contenu en bas à droite */}
               <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-end items-end p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="text-right text-white space-y-1">
                   <h3 className="h4">{work.title}</h3>
-                  <p className="body-2">{work.technologies.join(" • ")}</p>
+                  <p className="body-3">{work.technologies.join(" • ")}</p>
                 </div>
               </div>
             </div>
