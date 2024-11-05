@@ -17,7 +17,7 @@ export const Services = () => {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="border border-n-3 hover:bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate"
+              className="border-4 border-n-3 hover:bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate"
             >
               <img
                 src={feature.image}

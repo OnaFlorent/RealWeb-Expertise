@@ -2,6 +2,10 @@ import {
   bulletPoint1,
   bulletPoint2,
   bulletPoint3,
+  project1,
+  project2,
+  project3,
+  project4,
   icoSmartphone,
   icoGlobe,
   icoFacebook,
@@ -13,7 +17,7 @@ import {
   icoCable,
   icoX,
   logoReact,
-  logoGit,
+  logoNode,
   logoPostgre,
   logoTailwind,
   logoPhp,
@@ -25,9 +29,9 @@ import {
 export const tools = [
   {
     id: "0",
-    alt: "Logo Git",
-    image: logoGit,
-    title: "GIT",
+    alt: "Logo Node.js",
+    image: logoNode,
+    title: "NODE.JS",
   },
   {
     id: "1",
@@ -118,34 +122,46 @@ export const features = [
   },
 ];
 
-export const bulletPoints = [
+export const works = [
   {
     id: "0",
-    alt: "Saas Bullet Point 1",
-    image: bulletPoint1,
+    alt: "CleanThis! Projet final DWWM",
+    image: project1,
     width: 550,
     height: 300,
-    title: "How does it work?",
-    text: "Our landing page template works on all devices, so you only have to set it up once and get beautiful results.",
+    title: "CleanThis! Projet final DWWM",
+    technologies: ["Symfony", "MySQL", "React", "NodeJS", "MongoDB"],
+    url: "https://github.com/maxcottel24/cleanthis"
   },
   {
     id: "1",
-    alt: "Saas Bullet Point 2",
-    image: bulletPoint2,
-    width: 542,
-    height: 348,
-    title: "How does it work?",
-    text: "Our landing page template works on all devices, so you only have to set it up once and get beautiful results.",
+    alt: "Imagin'Hair by Isabelle",
+    image: project2,
+    width: 550,
+    height: 300,
+    title: "Imagin'Hair by Isabelle",
+    technologies: ["React", "NodeJS", "TypeScript", "Tailwind"],
+    url: "https://imaginhairbyisabelle.ovh/"
   },
   {
     id: "2",
-    alt: "Saas Bullet Point 3",
-    image: bulletPoint3,
+    alt: "Projet restauration MERNFood",
+    image: project3,
     width: 550,
     height: 300,
-    title: "How does it work?",
-    text: "Our landing page template works on all devices, so you only have to set it up once and get beautiful results.",
+    title: "Projet restauration MERNFood",
+    technologies: ["React", "NodeJS", "TypeScript", "Tailwind", "MongoDB"],
+    url: "https://github.com/OnaFlorent/Initiation-stack-MERN"
   },
+  {
+    id: "3",
+    alt: "Projet compte rendu d'activité",
+    image: project4,
+    width: 550,
+    height: 300,
+    title: "Projet compte rendu d'activité",
+    technologies: ["React", "NodeJS", "MySQL", "Express", "TypeScript", "Tailwind"],
+  }
 ];
 
 export const pricing = [

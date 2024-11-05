@@ -7,11 +7,15 @@ import profileImg from "./hero/profile_img.png";
 import bulletPoint1 from "./bullet-points/bullet-point-1.svg";
 import bulletPoint2 from "./bullet-points/bullet-point-2.svg";
 import bulletPoint3 from "./bullet-points/bullet-point-3.svg";
+import project1 from "./bullet-points/project-1.png";
+import project2 from "./bullet-points/project-2.png";
+import project3 from "./bullet-points/project-3.png";
+import project4 from "./bullet-points/project-4.png";
 
 // Logotypes
 import logoApp from "./branding/favicon.ico";
 import logoReact from "./branding/logo_react.svg";
-import logoGit from "./branding/logo_git.svg";
+import logoNode from "./branding/logo_node.svg";
 import logoPostgre from "./branding/logo_postgre.svg";
 import logoTailwind from "./branding/logo_tailwind.svg";
 import logoPhp from "./branding/logo_php.svg";
@@ -39,7 +43,7 @@ export {
   grid,
   elipseBlueBlur,
   logoReact,
-  logoGit,
+  logoNode,
   logoPostgre,
   logoTailwind,
   logoPhp,
@@ -57,6 +61,10 @@ export {
   bulletPoint1,
   bulletPoint2,
   bulletPoint3,
+  project1,
+  project2,
+  project3,
+  project4,
   icoFacebook,
   icoInstagram,
   icoLinkedin,

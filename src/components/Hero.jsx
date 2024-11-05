@@ -55,6 +55,7 @@ const Hero = () => {
                 Prendre un RDV
               </Button>
               <Button theme="secondary">Mon profil Malt</Button>
+              <Button theme="secondary">Mes tarifs</Button>
             </div>
           </div>
         </div>
