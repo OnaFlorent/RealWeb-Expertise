@@ -1,8 +1,15 @@
-import { FileDown } from "lucide-react";
-import { Button } from "./Button";
+import React from "react";
 import { Container } from "./Container";
+import { Button } from "./Button";
 
-export const CallToAction = ({ minify = false }) => {
+export const CallToAction = ({
+  minify,
+  title,
+  description,
+  image,
+  buttonText,
+  buttonLink,
+}) => {
   return (
     <Container>
       <div className="max-w-4xl mx-auto py-5 lg:py-10">
@@ -21,17 +28,17 @@ export const CallToAction = ({ minify = false }) => {
                 : "space-y-4 text-center"
             }
           >
-            <h3 className="h3">CV développeur Full-Stack</h3>
-            <div className="caption-1 text-n-1/50">Besoin d'en savoir plus sur mon parcours ? N'hésitez pas à consulter mon CV</div>
+            <h3 className="h3">{title}</h3>
+            <div className="caption-1 text-n-1/50">{description}</div>
           </div>
           <Button
             theme="primary"
             className="flex items-center justify-center gap-1"
+            href={buttonLink}
+            target="_blank"
           >
-            <span>
-              <FileDown width={24} height={24} alt="CV_download" className="mr-2"/>
-            </span>
-            <span>Télécharger</span>
+            <span>{image}</span>
+            <span>{buttonText}</span>
           </Button>
         </div>
       </div>

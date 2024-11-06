@@ -197,7 +197,7 @@ export const pricing = [
     features: [
       { description: "Élaboration du cahier des charges.", included: true },
       { description: "Création du site web", included: true },
-      { description: "Deux réajustement en cours de création", included: true },
+      { description: "Deux réajustements en cours de création", included: true },
       { description: "Hébergement**", included: true },
       { description: "Design personnalisé", included: true },
       { description: "Jusqu'à 10 choix de couleur", included: true },
@@ -221,7 +221,7 @@ export const pricing = [
     features: [
       { description: "Élaboration du cahier des charges.", included: true },
       { description: "Création du site web", included: true },
-      { description: "Jusqu'à 3 réajustement en cours de création", included: true },
+      { description: "Jusqu'à 3 réajustements en cours de création", included: true },
       { description: "Hébergement**", included: true },
       { description: "Design personnalisé", included: true },
       { description: "Choix de couleur illimité", included: true },

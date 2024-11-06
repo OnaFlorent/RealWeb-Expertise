@@ -50,8 +50,11 @@ const Hero = () => {
               basé dans la métropole lilloise, je mets mes compétences au
               service de vos projets numériques.
             </p>
+            <p className="body-1 text-n-5">
+              Besoin d'une présence en ligne pour votre activité principale ou secondaire ?
+            </p>
             <div className="flex justify-center lg:justify-start space-x-4">
-              <Button theme="primary" href="/">
+              <Button theme="primary" href="https://forms.gle/SQePZgWNcg5ucBB97" target="_blank">
                 Prendre contact
               </Button>
               <Button theme="secondary">Mon profil Malt</Button>
