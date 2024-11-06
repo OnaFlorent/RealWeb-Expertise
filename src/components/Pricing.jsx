@@ -13,7 +13,7 @@ export const Pricing = () => {
         <div className="caption-1 text-n-5 text-center uppercase">
           RealWeb Studio
         </div>
-        <h2 className="h2 text-center">Des formules clés en main</h2>
+        <h2 className="h2 text-center">Des forfaits clé en main</h2>
         <div className="caption-1 text-n-5 text-center uppercase">
           Site vitrine / Landing Page 
         </div>

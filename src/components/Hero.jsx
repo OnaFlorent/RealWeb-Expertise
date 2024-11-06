@@ -51,14 +51,25 @@ const Hero = () => {
               service de vos projets numériques.
             </p>
             <p className="body-1 text-n-5">
-              Besoin d'une présence en ligne pour votre activité principale ou secondaire ?
+              Besoin d'une présence en ligne pour votre activité ? Je vous
+              propose des solutions web sur-mesure, qu'il s'agisse de la
+              création d'un site vitrine ou d'une plateforme plus
+              complexe. Mon objectif est de vous offrir une vitrine numérique
+              qui reflète parfaitement votre entreprise et capte l'attention de
+              vos clients.
             </p>
             <div className="flex justify-center lg:justify-start space-x-4">
-              <Button theme="primary" href="https://forms.gle/SQePZgWNcg5ucBB97" target="_blank">
+              <Button
+                theme="primary"
+                href="https://forms.gle/SQePZgWNcg5ucBB97"
+                target="_blank"
+              >
                 Prendre contact
               </Button>
               <Button theme="secondary">Mon profil Malt</Button>
-              <Button theme="secondary" href="/#pricing">Mes tarifs</Button>
+              <Button theme="secondary" href="/#pricing">
+                Mes tarifs
+              </Button>
             </div>
           </div>
         </div>
