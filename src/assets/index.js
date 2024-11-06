@@ -30,8 +30,8 @@ import icoDatabase from "./ico/ico-database.svg";
 import icoBasket from "./ico/ico-basket.svg";
 import icoSettings from "./ico/ico-settings.svg";
 import icoCable from "./ico/ico-cable.svg";
-import icoArrowRight from "./ico/ico-arrow-right.svg";
 import icoCheck from "./ico/ico-check.svg";
+import icoUncheck from "./ico/ico-uncheck.svg";
 import icoFacebook from "./ico/ico-facebook.svg";
 import icoInstagram from "./ico/ico-instagram.svg";
 import icoLinkedin from "./ico/ico-linkedin.svg";
@@ -56,8 +56,8 @@ export {
   icoBasket,
   icoSettings,
   icoCable,
-  icoArrowRight,
   icoCheck,
+  icoUncheck,
   bulletPoint1,
   bulletPoint2,
   bulletPoint3,

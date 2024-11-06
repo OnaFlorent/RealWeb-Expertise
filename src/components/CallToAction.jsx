@@ -22,7 +22,7 @@ export const CallToAction = ({ minify = false }) => {
             }
           >
             <h3 className="h3">CV développeur Full-Stack</h3>
-            <div className="caption-1 text-n-1/50">Besoin d'en savoir plus sur mon parcours, télécharger mon CV en ligne.</div>
+            <div className="caption-1 text-n-1/50">Besoin d'en savoir plus sur mon parcours ? N'hésitez pas à consulter mon CV</div>
           </div>
           <Button
             theme="primary"

@@ -1,12 +1,13 @@
 import { works } from "../constants";
 import { Container } from "./Container";
+import { Headings } from "./Headings";
 
 export const Portfolio = () => {
   return (
     <Container>
       <div className="max-w-5xl mx-auto py-6 lg:py-12">
         <div className="space-y-4 mb-8 text-center lg:text-start">
-          <h2 className="h2">Mon portfolio</h2>
+          <Headings title="RealWeb Studio" subtitle="Mon portfolio" />
           <p className="body-1 text-n-5">
             Découvrez mes projets, alliant technologie et innovation pour
             répondre à vos besoins numériques.
@@ -16,8 +17,8 @@ export const Portfolio = () => {
           {works.map((work) => (
             <div
               key={work.id}
-              className={`relative overflow-hidden border-4 border-p-3 rounded-xl lg:rounded-2xl group ${
-                work.url ? "cursor-pointer" : "cursor-not-allowed"
+              className={`relative overflow-hidden border-4 border-n-3 hover:border-p-3 rounded-xl lg:rounded-2xl group ${
+                work.url ? "cursor-pointer" : "cursor-default"
               }`}
               onClick={() => {
                 if (work.url) {

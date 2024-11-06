@@ -17,7 +17,7 @@ const Hero = () => {
                 width={200}
                 height={200}
               />
-              <div className="border-t-2 border-n-1 flex flex-col text-center">
+              {/* <div className="border-t-2 border-n-1 flex flex-col text-center">
                 <h4 className="h5">Taux journalier (TJM)</h4>
                 <div className="flex items-baseline justify-center">
                   <h3 className="h3 bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
@@ -25,7 +25,7 @@ const Hero = () => {
                   </h3>
                   <h5 className="h5 text-n-5 ml-2">/jour</h5>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="text-center lg:text-left max-w-3xl mx-auto lg:ml-6 space-y-7">
@@ -52,10 +52,10 @@ const Hero = () => {
             </p>
             <div className="flex justify-center lg:justify-start space-x-4">
               <Button theme="primary" href="/">
-                Prendre un RDV
+                Prendre contact
               </Button>
               <Button theme="secondary">Mon profil Malt</Button>
-              <Button theme="secondary">Mes tarifs</Button>
+              <Button theme="secondary" href="/#pricing">Mes tarifs</Button>
             </div>
           </div>
         </div>
