@@ -14,7 +14,13 @@ export const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-                <img src={link.ico} alt={link.alt} width={20} height={20} />
+              <img
+                src={link.ico}
+                alt={link.alt}
+                width={20}
+                height={20}
+                className="cursor-pointer hover:text-p-3 animate"
+              />
             </a>
           ))}
         </div>

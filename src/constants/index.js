@@ -175,7 +175,7 @@ export const pricing = [
       { description: "Création du site web", included: true },
       { description: "Un réajustement en cours de création", included: true },
       { description: "Hébergement**", included: true },
-      { description: "Template", included: true },
+      { description: "Template prédéfinie", included: true },
       { description: "Choix de couleur limité", included: true },
       { description: "Utilisation de votre logo", included: true },
       { description: "Trois choix de police d'écriture", included: true },
@@ -187,7 +187,7 @@ export const pricing = [
       { description: "Maintenance ***", included: true },
       { description: "Réajustement", included: false },
     ],
-    text: "Démarrez facilement : Votre site web à partir d'un template personnalisable !"
+    text: "Démarrez facilement : Une présence en ligne à partir d'un template personnalisable !"
   },
   {
     id: "1",
@@ -235,7 +235,7 @@ export const pricing = [
       { description: "Maintenance ***", included: true },
       { description: "Jusqu'à 3 réajustement", included: true },
     ],
-    text: "Conception web premium: un site web unique, entièrement personnalisé pour vous !"
+    text: "Conception web premium: un site web unique avec plusieurs pages, entièrement personnalisé pour vous !"
   },
 ];
 

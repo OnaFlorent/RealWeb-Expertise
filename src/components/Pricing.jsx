@@ -2,7 +2,6 @@ import { icoCheck } from "../assets";
 import { icoUncheck } from "../assets";
 import { pricing } from "../constants";
 import { Container } from "./Container";
-import { Headings } from "./Headings";
 import { useState } from "react";
 
 export const Pricing = () => {
@@ -10,7 +9,15 @@ export const Pricing = () => {
 
   return (
     <div id="pricing">
-      <Headings title="RealWeb Studio" subtitle="Mes tarifs" />
+      <div className="py-5 lg:py-10">
+        <div className="caption-1 text-n-5 text-center uppercase">
+          RealWeb Studio
+        </div>
+        <h2 className="h2 text-center">Des formules clés en main</h2>
+        <div className="caption-1 text-n-5 text-center uppercase">
+          Site vitrine / Landing Page 
+        </div>
+      </div>
       <Container>
         <div className="grid lg:grid-cols-3 gap-5 lg:gap-10 lg:mb-16">
           {pricing.map((price) => {
@@ -33,14 +40,14 @@ export const Pricing = () => {
                   </div>
                   <span className="text-caption-1 text-n-5">*à partir de </span>
                   <hr
-                    className={`"border-t mt-7 mb-4 lg:mt-16 mg:mb-8"
+                    className={`"border-t mt-7 mb-4 lg:mt-16"
                     ${price.featured ? "border-n-6" : "border-stroke-1"}`}
                   />
                   <div className="flex justify-center lg:justify-start">
                     <h4 className="h4 text-n-3">{price.text}</h4>
                   </div>
                   <hr
-                    className={`"border-t mt-7 mb-4 lg:mt-16 mg:mb-8"
+                    className={`"border-t mt-7 mb-4 lg:mt-8"
                     ${price.featured ? "border-n-6" : "border-stroke-1"}`}
                   />
                   <div className="space-y-4 pb-8">
@@ -89,7 +96,7 @@ export const Pricing = () => {
                     )}
                   </div>
                   <hr
-                    className={`"border-t mt-7 mb-4 lg:mt-16 mg:mb-8"
+                    className={`"border-t mt-7 mb-4 lg:mt-8 mg:mb-8"
                     ${price.featured ? "border-n-6" : "border-stroke-1"}`}
                   />
                   <div className="flex flex-col justify-center text-center items-center text-xs text-n-3">

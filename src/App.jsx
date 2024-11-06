@@ -15,8 +15,8 @@ function App() {
       <Tools />
       <Portfolio />
       <CallToAction minify />
-      <Services />
       <Pricing />
+      <Services />
       <Footer />
     </>
   );
