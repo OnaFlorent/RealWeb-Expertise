@@ -27,13 +27,6 @@
           }
         ]
       }
-    ],
-    "redirects": [
-      {
-        "source": "/",
-        "destination": "https://belotflorent.fr",
-        "type": 301
-      }
     ]
   }
 }
