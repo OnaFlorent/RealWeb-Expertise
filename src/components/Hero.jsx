@@ -40,12 +40,15 @@ const Hero = () => {
             <h1 className="h1">
               <div className="flex flex-col">Bonjour!</div>
               <div>
-                <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
-                  Florent Belot,
-                </span>
+                <div>
+                  Je suis
+                  <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
+                    {" "}
+                    Florent Belot,
+                  </span>
+                </div>
                 <div>Développeur Full-Stack</div>
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
-                  {" "}
                   Freelance
                 </span>
               </div>
@@ -68,7 +71,9 @@ const Hero = () => {
               parfaitement votre entreprise et capte l'attention de vos clients.
             </p>
             <div className="flex justify-center lg:justify-start space-x-4">
-              <Button theme="secondary">Mon profil Malt</Button>
+              <Button theme="secondary" className="cursor-not-allowed">
+                Mon profil Malt
+              </Button>
               <Button theme="secondary" href="/#pricing">
                 Mes tarifs
               </Button>

@@ -9,9 +9,9 @@ export const Services = () => {
           <div className="space-y-4 mb-8 text-center lg:text-start">
             <h2 className="h2">Mes Services</h2>
             <p className="body-1 text-n-5">
-              Propulsez vos projets web vers l’avenir avec un développeur
-              full-stack engagé pour transformer vos idées en solutions
-              performantes.
+              Développeur full-stack investi et rigoureux, je vous accompagne
+              dans vos projets numériques avec des solutions fiables, pensées
+              pour répondre à vos attentes.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-5 lg:gap-10">

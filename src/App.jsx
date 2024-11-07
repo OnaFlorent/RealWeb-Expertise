@@ -13,8 +13,10 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Florent Belot | Développeur Full-Stack Freelance sur la métropole Lilloise
-        - Création de Sites Web & Applications SaaS - TJM 250/j</title>
+        <title>
+          Florent Belot | Développeur Full-Stack Freelance sur la métropole
+          Lilloise - Création de Sites Web & Applications SaaS - TJM 250/j
+        </title>
         <meta
           name="description"
           content="Florent Belot | Développeur Full-Stack Freelance sur la métropole Lilloise
@@ -112,7 +114,8 @@ function App() {
       {/* Section Services */}
       <Helmet>
         <title>
-          Services - Florent Belot, Développeur Full-Stack à Roubaix
+          Florent Belot | Développeur Full-Stack Freelance sur la métropole
+          Lilloise - Création de Sites Web & Applications SaaS - TJM 250/j
         </title>
         <meta
           name="description"

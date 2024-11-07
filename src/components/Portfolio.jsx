@@ -9,8 +9,9 @@ export const Portfolio = () => {
         <div className="space-y-4 mb-8 text-center lg:text-start">
           <Headings title="RealWeb Studio" subtitle="Mon portfolio" />
           <p className="body-1 text-n-5">
-            Découvrez mes projets, alliant technologie et innovation pour
-            répondre à vos besoins numériques.
+            Découvrez mes derniers projets, réalisés avec une panoplie d'outils
+            issus de ma veille technologique constante, pour répondre au mieux à
+            vos besoins numériques.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 gap-5 lg:gap-10">
