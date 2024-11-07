@@ -5,14 +5,10 @@ import {
   project4,
   icoSmartphone,
   icoGlobe,
-  icoFacebook,
   icoDatabase,
-  icoInstagram,
-  icoLinkedin,
   icoBasket,
   icoSettings,
   icoCable,
-  icoX,
   logoReact,
   logoNode,
   logoPostgre,
@@ -230,35 +226,8 @@ export const pricing = [
       { description: "Formulaire de contact", included: true },
       { description: "Mail professionnel", included: true },
       { description: "Maintenance ***", included: true },
-      { description: "Jusqu'à 3 réajustement", included: true },
+      { description: "Jusqu'à 3 réajustements", included: true },
     ],
     text: "Conception web premium: un site web unique avec plusieurs pages, entièrement personnalisé pour vous !"
-  },
-];
-
-export const social = [
-  {
-    id: "0",
-    ico: icoFacebook,
-    alt: "Facebook",
-    link: "#/",
-  },
-  {
-    id: "1",
-    ico: icoX,
-    alt: "X",
-    link: "#/",
-  },
-  {
-    id: "2",
-    ico: icoInstagram,
-    alt: "Instagram",
-    link: "#/",
-  },
-  {
-    id: "3",
-    ico: icoLinkedin,
-    alt: "Linkedin",
-    link: "https://www.linkedin.com/in/florentbelot/",
   },
 ];

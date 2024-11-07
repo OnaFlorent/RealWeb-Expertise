@@ -29,10 +29,6 @@ import icoSettings from "./ico/ico-settings.svg";
 import icoCable from "./ico/ico-cable.svg";
 import icoCheck from "./ico/ico-check.svg";
 import icoUncheck from "./ico/ico-uncheck.svg";
-import icoFacebook from "./ico/ico-facebook.svg";
-import icoInstagram from "./ico/ico-instagram.svg";
-import icoLinkedin from "./ico/ico-linkedin.svg";
-import icoX from "./ico/ico-x.svg";
 
 export {
   profileImg,
@@ -59,8 +55,4 @@ export {
   project2,
   project3,
   project4,
-  icoFacebook,
-  icoInstagram,
-  icoLinkedin,
-  icoX,
 };

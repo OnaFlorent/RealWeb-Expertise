@@ -52,10 +52,9 @@ const Hero = () => {
             </h1>
 
             <p className="body-1 text-n-5">
-              Développeur Full-Stack freelance certifié en web et web mobile,
-              basé dans la métropole lilloise, je mets
+              Développeur Full-Stack Freelance certifié en web et web mobile,
+              basé dans la métropole lilloise, je mets{" "}
               <a href="/#services" className="text-n-1">
-                {" "}
                 mes compétences au service
               </a>{" "}
               de vos projets numériques, quelles que soient leurs dimensions.
