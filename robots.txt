@@ -1,6 +1,3 @@
 User-agent: *
-Allow: / 
-Disallow: /admin/
-Disallow: /config/
-
+Allow: /
 Sitemap: https://realweb-studio.web.app/sitemap.xml
