@@ -259,6 +259,6 @@ export const social = [
     id: "3",
     ico: icoLinkedin,
     alt: "Linkedin",
-    link: "#/",
+    link: "https://www.linkedin.com/in/florentbelot/",
   },
 ];

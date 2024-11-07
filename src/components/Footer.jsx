@@ -12,7 +12,7 @@ export const Footer = () => {
               title={link.alt}
               href={link.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img
                 src={link.ico}

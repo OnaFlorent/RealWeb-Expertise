@@ -29,7 +29,7 @@ export const Portfolio = () => {
               <img
                 src={work.image}
                 alt={work.alt}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-full object-cover animate group-hover:scale-110 pointer-events-none"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-end items-end p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="text-right text-white space-y-1">
