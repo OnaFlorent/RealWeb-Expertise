@@ -44,7 +44,7 @@ export const Pricing = () => {
                     ${price.featured ? "border-n-6" : "border-stroke-1"}`}
                   />
                   <div className="flex justify-center lg:justify-start">
-                    <h4 className="h4 text-n-3">{price.text}</h4>
+                    <span className="h4 text-n-3">{price.text}</span>
                   </div>
                   <hr
                     className={`"border-t mt-7 mb-4 lg:mt-8"
@@ -87,7 +87,7 @@ export const Pricing = () => {
                         onClick={toggleExpanded}
                       >
                         <div
-                          className="flex items-center justify-center w-6 h-6 rounded-full bg-n-6 text-white text-lg font-bold  animate hover:bg-p-3"
+                          className="text-2xl flex items-center justify-center w-12 h-12 rounded-full bg-n-6 text-white animate hover:bg-p-3"
                           style={{ lineHeight: "1" }}
                         >
                           {isExpanded ? "-" : "+"}

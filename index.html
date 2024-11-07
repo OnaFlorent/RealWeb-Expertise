@@ -2,10 +2,50 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/branding/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="realweb_dev">
-    <meta name="description" content="#Portfolio - Développement et programmation de fonctionnalités et d'applications web, du site vitrine au SaaS.">
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/branding/favicon.ico"
+    />
+    <link rel="preload" as="image" href="/src/assets/profile_img.png" />
+
+    <!-- Ajouter une alternative pour favicon en cas d’incompatibilité -->
+    <link rel="icon" href="/src/assets/branding/favicon.ico" sizes="any" />
+    <link rel="icon" href="/src/assets/branding/favicon.png" type="image/png" />
+
+    <!-- Meta pour l'affichage sur mobile -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+
+    <meta name="author" content="realweb_dev" />
+    <meta
+      name="description"
+      content="#Portfolio - Développement et programmation de fonctionnalités et d'applications web, du site vitrine au SaaS."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Préchargement conditionnel si tu as des fontes personnalisées -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <!-- Informations Open Graph pour les réseaux sociaux -->
+    <meta
+      property="og:title"
+      content="Florent Belot | Développeur Full-Stack Freelance"
+    />
+    <meta
+      property="og:description"
+      content="Développement et programmation de fonctionnalités et d'applications web, du site vitrine au SaaS."
+    />
+    <meta property="og:image" content="/src/assets/profile_img.png" />
+    <meta property="og:type" content="website" />
+
     <title>Florent Belot | Développeur Full-Stack Freelance - TJM 250/j</title>
   </head>
   <body>

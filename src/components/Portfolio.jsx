@@ -26,11 +26,30 @@ export const Portfolio = () => {
                 }
               }}
             >
-              <img
-                src={work.image}
-                alt={work.alt}
-                className="w-full h-full object-cover animate group-hover:scale-110 pointer-events-none"
-              />
+              <picture>
+                <source
+                  srcSet={`${work.image.replace(
+                    ".jpg",
+                    "-small.webp"
+                  )} 500w, ${work.image.replace(".jpg", "-large.webp")} 1000w`}
+                  sizes="(max-width: 600px) 100vw, 50vw"
+                  type="image/webp"
+                />
+                <img
+                  src={work.image}
+                  srcSet={`${work.image.replace(
+                    ".jpg",
+                    "-small.jpg"
+                  )} 500w, ${work.image.replace(".jpg", "-large.jpg")} 1000w`}
+                  sizes="(max-width: 600px) 100vw, 50vw"
+                  alt={work.alt}
+                  className="w-full h-full object-cover animate group-hover:scale-110 pointer-events-none"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-end items-end p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="text-right text-white space-y-1">
                   <h3 className="h4">{work.title}</h3>

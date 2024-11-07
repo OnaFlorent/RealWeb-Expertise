@@ -5,7 +5,10 @@ export const ElipseBlueBur = () => {
     <img
       src={elipseBlueBlur}
       alt="elipse-blue-blur"
-      className="absolute -top-[14rem] -left-[9rem] z-0 pointer-event-none mix-blend-color-dodge"
+      loading="lazy"
+      width="500" 
+      height="500"
+      className="absolute -top-[14rem] -left-[9rem] z-0 pointer-events-none mix-blend-color-dodge"
     />
   );
 };

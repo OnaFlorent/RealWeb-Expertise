@@ -14,6 +14,7 @@ export const Header = () => {
           </div>
           <div className="flex items-center space-x-4">
             <a
+              title="Linkedin"
               href="https://www.linkedin.com/in/florentbelot/"
               target="_blank"
               rel="noopener noreferrer"
@@ -22,6 +23,7 @@ export const Header = () => {
               <Linkedin width={20} height={20} alt="Linkedin" />
             </a>
             <a
+              title="Github"
               href="https://github.com/OnaFlorent"
               target="_blank"
               rel="noopener noreferrer"
@@ -30,6 +32,7 @@ export const Header = () => {
               <Github width={20} height={20} alt="Github" />
             </a>
             <a
+              title="Mon CV"
               href="https://drive.google.com/file/d/18aF6lSHo-wOrV1PGWWgCEXnBcp7hnIUa/view"
               target="_blank"
               rel="noopener noreferrer"

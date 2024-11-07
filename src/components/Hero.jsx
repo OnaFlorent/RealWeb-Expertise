@@ -10,20 +10,28 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row lg:space-x-8 items-center lg:items-start lg:justify-between">
           <div className="order-first mt-8 mb-8 lg:mt-0 lg:order-last">
             <div className="border-4 hover:border-p-3 bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate">
-              <img
-                src={profileImg}
-                alt="Profile_img"
-                className="mx-auto rounded-full border-4 border-n-1 border-opacity-50 pointer-events-none"
-                width={200}
-                height={200}
-              />
+              <picture>
+                <source
+                  srcSet={profileImg.replace(".jpg", ".webp")}
+                  type="image/webp"
+                />
+                <img
+                  src={profileImg}
+                  alt="Profile"
+                  className="mx-auto rounded-full border-4 border-n-1 border-opacity-50 pointer-events-none"
+                  width={200}
+                  height={200}
+                  loading="eager"
+                  decoding="async"
+                />
+              </picture>
               <div className="border-t-2 border-n-1 flex flex-col text-center">
-                <h4 className="h5">Taux journalier (TJM)</h4>
+                <h4 className="h4">Taux journalier (TJM)</h4>
                 <div className="flex items-baseline justify-center">
                   <h3 className="h3 bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                     €250
                   </h3>
-                  <h5 className="h5 text-n-5 ml-2">/jour</h5>
+                  <h4 className="h4 text-n-5 ml-2">/jour</h4>
                 </div>
               </div>
             </div>
@@ -48,7 +56,7 @@ const Hero = () => {
             <p className="body-1 text-n-5">
               Développeur Full-Stack freelance certifié en web et web mobile,
               basé dans la métropole lilloise, je mets
-              <a href="/#services" className="text-n-3">
+              <a href="/#services" className="text-n-1">
                 {" "}
                 mes compétences au service
               </a>{" "}
@@ -70,9 +78,7 @@ const Hero = () => {
               >
                 Prendre contact
               </Button>
-              <Button theme="secondary">
-                Mon profil Malt
-              </Button>
+              <Button theme="secondary">Mon profil Malt</Button>
               <Button theme="secondary" href="/#pricing">
                 Mes tarifs
               </Button>
