@@ -9,7 +9,7 @@ const Hero = () => {
       <Container className="relative z-10 lg:py-16 space-y-16 max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row lg:space-x-8 items-center lg:items-start lg:justify-between">
           <div className="order-first mt-8 mb-8 lg:mt-0 lg:order-last">
-            <div className="border-4 hover:border-p-3 bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate">
+            <div className="border-4 bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate-border-animation">
               <picture>
                 <source
                   srcSet={profileImg.replace(".jpg", ".webp")}
@@ -25,34 +25,32 @@ const Hero = () => {
                   decoding="async"
                 />
               </picture>
-              <div className="border-t-2 border-n-1 flex flex-col text-center">
-                <h4 className="h4">Taux journalier (TJM)</h4>
-                <div className="flex items-baseline justify-center">
-                  <h3 className="h3 bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
-                    €250
-                  </h3>
-                  <h4 className="h4 text-n-5 ml-2">/jour</h4>
-                </div>
+              <div className="flex justify-center lg:justify-start space-x-4 mt-6">
+                <Button
+                  theme="primary"
+                  href="https://forms.gle/SQePZgWNcg5ucBB97"
+                  target="_blank"
+                >
+                  Prendre contact
+                </Button>
               </div>
             </div>
           </div>
           <div className="text-center lg:text-left max-w-3xl mx-auto lg:ml-6 space-y-7">
             <h1 className="h1">
-              <div className="flex flex-col">Bonjour!</div>{" "}
+              <div className="flex flex-col">Bonjour!</div>
               <div>
-                Je suis
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
-                  {" "}
-                  Florent Belot
+                  Florent Belot,
                 </span>
-                , le développeur
+                <div>Développeur Full-Stack</div>
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                   {" "}
-                  freelance
-                </span>{" "}
-                qu'il vous faut!
+                  Freelance
+                </span>
               </div>
             </h1>
+
             <p className="body-1 text-n-5">
               Développeur Full-Stack freelance certifié en web et web mobile,
               basé dans la métropole lilloise, je mets
@@ -71,13 +69,6 @@ const Hero = () => {
               parfaitement votre entreprise et capte l'attention de vos clients.
             </p>
             <div className="flex justify-center lg:justify-start space-x-4">
-              <Button
-                theme="primary"
-                href="https://forms.gle/SQePZgWNcg5ucBB97"
-                target="_blank"
-              >
-                Prendre contact
-              </Button>
               <Button theme="secondary">Mon profil Malt</Button>
               <Button theme="secondary" href="/#pricing">
                 Mes tarifs

@@ -2,6 +2,7 @@ import { icoCheck } from "../assets";
 import { icoUncheck } from "../assets";
 import { pricing } from "../constants";
 import { Container } from "./Container";
+import { CirclePlus, CircleMinus } from "lucide-react";
 import { useState } from "react";
 
 export const Pricing = () => {
@@ -15,7 +16,7 @@ export const Pricing = () => {
         </div>
         <h2 className="h2 text-center">Des forfaits clé en main</h2>
         <div className="caption-1 text-n-5 text-center uppercase">
-          Site vitrine | Landing Page 
+          Site vitrine | Landing Page
         </div>
       </div>
       <Container>
@@ -87,10 +88,14 @@ export const Pricing = () => {
                         onClick={toggleExpanded}
                       >
                         <div
-                          className="text-2xl flex items-center justify-center w-12 h-12 rounded-full bg-n-6 text-white animate hover:bg-p-3"
+                          className="flex items-center justify-center w-12 h-12 rounded-full bg-n-6 hover:bg-p-3 animate"
                           style={{ lineHeight: "1" }}
                         >
-                          {isExpanded ? "-" : "+"}
+                          {isExpanded ? (
+                            <CircleMinus size={24} alt="Circle_minus" />
+                          ) : (
+                            <CirclePlus size={24} alt="Circle_plus" />
+                          )}
                         </div>
                       </div>
                     )}

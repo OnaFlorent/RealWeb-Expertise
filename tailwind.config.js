@@ -3,7 +3,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], // Chemins pour que Tailwind purge les fichiers inutiles
   theme: {
     extend: {
       colors: {
@@ -31,6 +31,22 @@ export default {
       },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],
+      },
+      animation: {
+        "border-animation": "borderAnimation 2s linear infinite",
+      },
+      keyframes: {
+        borderAnimation: {
+          "0%": {
+            borderColor: "#FFFFFF", 
+          },
+          "50%": {
+            borderColor: "#3B82F6", 
+          },
+          "100%": {
+            borderColor: "#FFFFFF", 
+          },
+        },
       },
     },
   },

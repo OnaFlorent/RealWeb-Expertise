@@ -184,7 +184,7 @@ export const pricing = [
       { description: "Maintenance ***", included: true },
       { description: "Réajustement", included: false },
     ],
-    text: "Démarrez facilement : Une présence en ligne à partir d'un template personnalisable !"
+    text: "Démarrez à un prix abordable : Une présence en ligne à partir d'un template personnalisable !"
   },
   {
     id: "1",

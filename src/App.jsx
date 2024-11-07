@@ -34,7 +34,7 @@ function App() {
       <CallToAction
         minify={false}
         title="Besoin d'une solution sur mesure ?"
-        description="Si vous avez besoin d'un site vitrine plus élaboré ou d'un site e-commerce, n'hésitez pas à me contacter."
+        description="Si vous avez besoin d'un site vitrine plus élaboré ou d'un site e-commerce, n'hésitez pas à me contacter pour une estimation via ce formulaire:"
         image={
           <FileUser width={24} height={24} alt="Google_form" className="mr-2" />
         }
