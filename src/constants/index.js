@@ -1,7 +1,4 @@
 import {
-  bulletPoint1,
-  bulletPoint2,
-  bulletPoint3,
   project1,
   project2,
   project3,

@@ -1,5 +1,6 @@
 export const Button = ({ children, theme, className, href, target }) => {
   const baseClasse = "text-white hover:text-white";
+  const rel = "noopener noreferrer";
   const themeClasses =
     theme === "primary"
       ? "bg-p-3 hover:bg-p-2"
@@ -19,6 +20,7 @@ export const Button = ({ children, theme, className, href, target }) => {
     <a
       href={href}
       target={target}
+      rel={rel}
       className={`button inline-block py-3 px-3 lg:py-4 lg:px-6 rounded-lg no-underline ${themeClasses} ${baseClasse} ${className}`}
     >
       {children}

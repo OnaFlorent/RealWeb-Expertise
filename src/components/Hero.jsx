@@ -17,7 +17,7 @@ const Hero = () => {
                 width={200}
                 height={200}
               />
-              {/* <div className="border-t-2 border-n-1 flex flex-col text-center">
+              <div className="border-t-2 border-n-1 flex flex-col text-center">
                 <h4 className="h5">Taux journalier (TJM)</h4>
                 <div className="flex items-baseline justify-center">
                   <h3 className="h3 bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
@@ -25,19 +25,19 @@ const Hero = () => {
                   </h3>
                   <h5 className="h5 text-n-5 ml-2">/jour</h5>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="text-center lg:text-left max-w-3xl mx-auto lg:ml-6 space-y-7">
             <h1 className="h1">
-              <div className="flex flex-col">Bonjour! </div>{" "}
+              <div className="flex flex-col">Bonjour!</div>{" "}
               <div>
                 Je suis
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                   {" "}
-                  Florent Belot,
-                </span>{" "}
-                le développeur
+                  Florent Belot
+                </span>
+                , le développeur
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                   {" "}
                   freelance
@@ -47,16 +47,20 @@ const Hero = () => {
             </h1>
             <p className="body-1 text-n-5">
               Développeur Full-Stack freelance certifié en web et web mobile,
-              basé dans la métropole lilloise, je mets mes compétences au
-              service de vos projets numériques.
+              basé dans la métropole lilloise, je mets
+              <a href="/#services" className="text-n-3">
+                {" "}
+                mes compétences au service
+              </a>{" "}
+              de vos projets numériques, quelles que soient leurs dimensions.
             </p>
+
             <p className="body-1 text-n-5">
               Besoin d'une présence en ligne pour votre activité ? Je vous
               propose des solutions web sur-mesure, qu'il s'agisse de la
-              création d'un site vitrine ou d'une plateforme plus
-              complexe. Mon objectif est de vous offrir une vitrine numérique
-              qui reflète parfaitement votre entreprise et capte l'attention de
-              vos clients.
+              création d'un site vitrine ou d'une plateforme plus complexe. Mon
+              objectif est de vous offrir une vitrine numérique qui reflète
+              parfaitement votre entreprise et capte l'attention de vos clients.
             </p>
             <div className="flex justify-center lg:justify-start space-x-4">
               <Button
@@ -66,7 +70,9 @@ const Hero = () => {
               >
                 Prendre contact
               </Button>
-              <Button theme="secondary">Mon profil Malt</Button>
+              <Button theme="secondary">
+                Mon profil Malt
+              </Button>
               <Button theme="secondary" href="/#pricing">
                 Mes tarifs
               </Button>

@@ -15,7 +15,7 @@ export const Pricing = () => {
         </div>
         <h2 className="h2 text-center">Des forfaits clé en main</h2>
         <div className="caption-1 text-n-5 text-center uppercase">
-          Site vitrine / Landing Page 
+          Site vitrine | Landing Page 
         </div>
       </div>
       <Container>

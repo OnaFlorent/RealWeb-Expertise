@@ -4,9 +4,6 @@ import elipseBlueBlur from "./elipse-blue-blur.png";
 
 // Illustrations
 import profileImg from "./hero/profile_img.png";
-import bulletPoint1 from "./bullet-points/bullet-point-1.svg";
-import bulletPoint2 from "./bullet-points/bullet-point-2.svg";
-import bulletPoint3 from "./bullet-points/bullet-point-3.svg";
 import project1 from "./bullet-points/project-1.png";
 import project2 from "./bullet-points/project-2.png";
 import project3 from "./bullet-points/project-3.png";
@@ -58,9 +55,6 @@ export {
   icoCable,
   icoCheck,
   icoUncheck,
-  bulletPoint1,
-  bulletPoint2,
-  bulletPoint3,
   project1,
   project2,
   project3,

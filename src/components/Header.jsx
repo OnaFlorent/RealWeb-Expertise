@@ -13,24 +13,30 @@ export const Header = () => {
             </h4>
           </div>
           <div className="flex items-center space-x-4">
-            <Linkedin
-              width={20}
-              height={20}
-              alt="Linkedin"
+            <a
+              href="https://www.linkedin.com/in/florentbelot/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer hover:text-p-3 animate"
-            />
-            <Github
-              width={20}
-              height={20}
-              alt="Github"
+            >
+              <Linkedin width={20} height={20} alt="Linkedin" />
+            </a>
+            <a
+              href="https://github.com/OnaFlorent"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer hover:text-p-3 animate"
-            />
-            <Paperclip
-              width={20}
-              height={20}
-              alt="CV_download"
+            >
+              <Github width={20} height={20} alt="Github" />
+            </a>
+            <a
+              href="https://drive.google.com/file/d/18aF6lSHo-wOrV1PGWWgCEXnBcp7hnIUa/view"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer hover:text-p-3 animate"
-            />
+            >
+              <Paperclip width={20} height={20} alt="CV_download" />
+            </a>
           </div>
         </div>
         <ElipseBlueBur />
