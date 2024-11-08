@@ -29,24 +29,22 @@ export const Portfolio = () => {
             >
               <picture>
                 <source
-                  srcSet={`${work.image.replace(
-                    ".jpg",
-                    "-small.webp"
-                  )} 500w, ${work.image.replace(".jpg", "-large.webp")} 1000w`}
-                  sizes="(max-width: 600px) 100vw, 50vw"
+                  srcSet={`${work.image.replace(".jpg", "-small.webp")} 500w, 
+             ${work.image.replace(".jpg", "-large.webp")} 1000w, 
+             ${work.image.replace(".jpg", "-xlarge.webp")} 1500w`}
+                  sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   type="image/webp"
                 />
                 <img
                   src={work.image}
-                  srcSet={`${work.image.replace(
-                    ".jpg",
-                    "-small.jpg"
-                  )} 500w, ${work.image.replace(".jpg", "-large.jpg")} 1000w`}
-                  sizes="(max-width: 600px) 100vw, 50vw"
+                  srcSet={`${work.image.replace(".jpg", "-small.jpg")} 500w, 
+             ${work.image.replace(".jpg", "-large.jpg")} 1000w, 
+             ${work.image.replace(".jpg", "-xlarge.jpg")} 1500w`}
+                  sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   alt={work.alt}
                   className="w-full h-full object-cover animate group-hover:scale-110 pointer-events-none"
                   width="100%"
-                  height="100%"
+                  height="auto"
                   loading="lazy"
                   decoding="async"
                 />

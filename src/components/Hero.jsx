@@ -12,11 +12,19 @@ const Hero = () => {
             <div className="border-4 bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate-border-animation">
               <picture>
                 <source
-                  srcSet={profileImg.replace(".jpg", ".webp")}
+                  srcSet={`${profileImg.replace(".jpg", "-small.webp")} 500w, 
+             ${profileImg.replace(".jpg", "-medium.webp")} 1000w, 
+             ${profileImg.replace(".jpg", "-large.webp")} 1500w`}
+                  sizes="(max-width: 600px) 50vw, (max-width: 1024px) 25vw, 10vw"
                   type="image/webp"
                 />
+
                 <img
                   src={profileImg}
+                  srcSet={`${profileImg.replace(".jpg", "-small.jpg")} 500w, 
+             ${profileImg.replace(".jpg", "-medium.jpg")} 1000w, 
+             ${profileImg.replace(".jpg", "-large.jpg")} 1500w`}
+                  sizes="(max-width: 600px) 50vw, (max-width: 1024px) 25vw, 10vw"
                   alt="Profile"
                   className="mx-auto rounded-full border-4 border-n-1 border-opacity-50 pointer-events-none"
                   width={200}
@@ -25,6 +33,7 @@ const Hero = () => {
                   decoding="async"
                 />
               </picture>
+
               <div className="flex justify-center space-x-4">
                 <Button
                   theme="primary"
