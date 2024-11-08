@@ -25,7 +25,7 @@ const Hero = () => {
                   decoding="async"
                 />
               </picture>
-              <div className="flex justify-center lg:justify-start space-x-4 mt-6">
+              <div className="flex justify-center space-x-4">
                 <Button
                   theme="primary"
                   href="https://forms.gle/SQePZgWNcg5ucBB97"
@@ -44,8 +44,9 @@ const Hero = () => {
                   Je suis
                   <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                     {" "}
-                    Florent Belot,
+                    Florent Belot
                   </span>
+                  ,
                 </div>
                 <div>Développeur Full-Stack</div>
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">

@@ -33,3 +33,9 @@ a.button:hover {
 a:hover {
   @apply underline text-p-3 animate;
 }
+
+.no-custom-hover:hover {
+  text-decoration: none;
+  color: inherit;
+  animation: none;
+}

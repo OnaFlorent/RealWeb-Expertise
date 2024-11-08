@@ -4,6 +4,7 @@ import { pricing } from "../constants";
 import { Container } from "./Container";
 import { CirclePlus, CircleMinus } from "lucide-react";
 import { useState } from "react";
+import { Button } from "./Button";
 
 export const Pricing = () => {
   const visibleFeatureCount = 5;
@@ -99,6 +100,15 @@ export const Pricing = () => {
                         </div>
                       </div>
                     )}
+                  </div>
+                  <div className="flex justify-center space-x-4 mt-6">
+                    <Button
+                      theme="primary"
+                      href="https://forms.gle/SQePZgWNcg5ucBB97"
+                      target="_blank"
+                    >
+                      Élaborer un devis
+                    </Button>
                   </div>
                   <hr
                     className={`"border-t mt-7 mb-4 lg:mt-8 mg:mb-8"
