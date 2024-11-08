@@ -1,8 +1,12 @@
 import {
-  project1,
-  project2,
-  project3,
-  project4,
+  project1Png,
+  project2Png,
+  project3Png,
+  project4Png,
+  project1Webp,
+  project2Webp,
+  project3Webp,
+  project4Webp,
   icoSmartphone,
   icoGlobe,
   icoDatabase,
@@ -16,7 +20,7 @@ import {
   logoPhp,
   logoTypeScript,
   logoMongo,
-  logoFirebase
+  logoFirebase,
 } from "../assets";
 
 export const tools = [
@@ -119,42 +123,53 @@ export const works = [
   {
     id: "0",
     alt: "Img_cleanthis",
-    image: project1,
+    imagePng: project1Png,
+    imageWebp: project1Webp,
     width: 550,
     height: 300,
     title: "CleanThis! Projet final DWWM",
     technologies: ["Symfony", "MySQL", "React", "NodeJS", "MongoDB"],
-    url: "https://github.com/maxcottel24/cleanthis"
+    url: "https://github.com/maxcottel24/cleanthis",
   },
   {
     id: "1",
     alt: "Img_imagin_hair",
-    image: project2,
+    imagePng: project2Png,
+    imageWebp: project2Webp,
     width: 550,
     height: 300,
     title: "Imagin'Hair by Isabelle",
     technologies: ["React", "NodeJS", "TypeScript", "Tailwind"],
-    url: "https://imaginhairbyisabelle.ovh/"
+    url: "https://imaginhairbyisabelle.ovh/",
   },
   {
     id: "2",
     alt: "Img_mern_food",
-    image: project3,
+    imagePng: project3Png,
+    imageWebp: project3Webp,
     width: 550,
     height: 300,
     title: "Projet restauration MERNFood",
     technologies: ["React", "NodeJS", "TypeScript", "Tailwind", "MongoDB"],
-    url: "https://github.com/OnaFlorent/Initiation-stack-MERN"
+    url: "https://github.com/OnaFlorent/Initiation-stack-MERN",
   },
   {
     id: "3",
     alt: "Img_cra",
-    image: project4,
+    imagePng: project4Png,
+    imageWebp: project4Webp,
     width: 550,
     height: 300,
     title: "Projet compte rendu d'activité",
-    technologies: ["React", "NodeJS", "MySQL", "Express", "TypeScript", "Tailwind"],
-  }
+    technologies: [
+      "React",
+      "NodeJS",
+      "MySQL",
+      "Express",
+      "TypeScript",
+      "Tailwind",
+    ],
+  },
 ];
 
 export const pricing = [
@@ -180,7 +195,7 @@ export const pricing = [
       { description: "Maintenance ***", included: true },
       { description: "Réajustement", included: false },
     ],
-    text: "Démarrez à un prix abordable : Une présence en ligne à partir d'un template personnalisable !"
+    text: "Démarrez à un prix abordable : Une présence en ligne à partir d'un template personnalisable !",
   },
   {
     id: "1",
@@ -190,7 +205,10 @@ export const pricing = [
     features: [
       { description: "Élaboration du cahier des charges.", included: true },
       { description: "Création du site web", included: true },
-      { description: "Deux réajustements en cours de création", included: true },
+      {
+        description: "Deux réajustements en cours de création",
+        included: true,
+      },
       { description: "Hébergement**", included: true },
       { description: "Design personnalisé", included: true },
       { description: "Jusqu'à 10 choix de couleur", included: true },
@@ -204,7 +222,7 @@ export const pricing = [
       { description: "Maintenance ***", included: true },
       { description: "Réajustement", included: false },
     ],
-    text: "Développez votre présence en ligne avec un site web responsive et personnalisé !"
+    text: "Développez votre présence en ligne avec un site web responsive et personnalisé !",
   },
   {
     id: "2",
@@ -214,7 +232,10 @@ export const pricing = [
     features: [
       { description: "Élaboration du cahier des charges.", included: true },
       { description: "Création du site web", included: true },
-      { description: "Jusqu'à 3 réajustements en cours de création", included: true },
+      {
+        description: "Jusqu'à 3 réajustements en cours de création",
+        included: true,
+      },
       { description: "Hébergement**", included: true },
       { description: "Design personnalisé", included: true },
       { description: "Choix de couleur illimité", included: true },
@@ -228,6 +249,6 @@ export const pricing = [
       { description: "Maintenance ***", included: true },
       { description: "Jusqu'à 3 réajustements", included: true },
     ],
-    text: "Conception web premium: un site web unique avec plusieurs pages, entièrement personnalisé pour vous !"
+    text: "Conception web premium: un site web unique avec plusieurs pages, entièrement personnalisé pour vous !",
   },
 ];

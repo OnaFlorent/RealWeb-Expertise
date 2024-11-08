@@ -1,7 +1,9 @@
-import { profileImg } from "../assets";
+import profileImgPng from "../../src/assets/hero/profile_img.png";
+import profileImgWebp from "../../src/assets/hero/profile_img.webp";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import { Grid } from "./theme/Hero";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -9,31 +11,25 @@ const Hero = () => {
       <Container className="relative z-10 lg:py-16 space-y-16 max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row lg:space-x-8 items-center lg:items-start lg:justify-between">
           <div className="order-first mt-8 mb-8 lg:mt-0 lg:order-last">
-            <div className="border-4 bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate-border-animation">
+            <motion.div
+              className="border-4 bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate-border-animation"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.9 }}
+            >
               <picture>
-                <source
-                  srcSet={`${profileImg.replace(".jpg", "-small.webp")} 500w, 
-             ${profileImg.replace(".jpg", "-medium.webp")} 1000w, 
-             ${profileImg.replace(".jpg", "-large.webp")} 1500w`}
-                  sizes="(max-width: 600px) 50vw, (max-width: 1024px) 25vw, 10vw"
-                  type="image/webp"
-                />
-
+                <source srcSet={profileImgWebp} type="image/webp" />
+                <source srcSet={profileImgPng} type="image/png" />
                 <img
-                  src={profileImg}
-                  srcSet={`${profileImg.replace(".jpg", "-small.jpg")} 500w, 
-             ${profileImg.replace(".jpg", "-medium.jpg")} 1000w, 
-             ${profileImg.replace(".jpg", "-large.jpg")} 1500w`}
-                  sizes="(max-width: 600px) 50vw, (max-width: 1024px) 25vw, 10vw"
+                  src={profileImgPng} 
                   alt="Profile"
                   className="mx-auto rounded-full border-4 border-n-1 border-opacity-50 pointer-events-none"
                   width={200}
                   height={200}
-                  loading="eager"
+                  loading="lazy"
                   decoding="async"
                 />
               </picture>
-
               <div className="flex justify-center space-x-4">
                 <Button
                   theme="primary"
@@ -43,7 +39,7 @@ const Hero = () => {
                   Prendre contact
                 </Button>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="text-center lg:text-left max-w-3xl mx-auto lg:ml-6 space-y-7">
             <h1 className="h1">

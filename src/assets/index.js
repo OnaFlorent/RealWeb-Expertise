@@ -4,10 +4,14 @@ import elipseBlueBlur from "./elipse-blue-blur.png";
 
 // Illustrations
 import profileImg from "./hero/profile_img.png";
-import project1 from "./bullet-points/project-1.png";
-import project2 from "./bullet-points/project-2.png";
-import project3 from "./bullet-points/project-3.png";
-import project4 from "./bullet-points/project-4.png";
+import project1Png from "./bullet-points/project-1.png";
+import project2Png from "./bullet-points/project-2.png";
+import project3Png from "./bullet-points/project-3.png";
+import project4Png from "./bullet-points/project-4.png";
+import project1Webp from "./bullet-points/project-1.webp";
+import project2Webp from "./bullet-points/project-2.webp";
+import project3Webp from "./bullet-points/project-3.webp";
+import project4Webp from "./bullet-points/project-4.webp";
 
 // Logotypes
 import logoApp from "./branding/favicon.ico";
@@ -51,8 +55,12 @@ export {
   icoCable,
   icoCheck,
   icoUncheck,
-  project1,
-  project2,
-  project3,
-  project4,
+  project1Png,
+  project2Png,
+  project3Png,
+  project4Png,
+  project1Webp,
+  project2Webp,
+  project3Webp,
+  project4Webp,
 };

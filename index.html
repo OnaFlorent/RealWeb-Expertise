@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="https://belotflorent.fr/src/assets/branding/favicon.png" sizes="any">
-  
-  <!-- Préchargement de l'image LCP -->
-  <link rel="preload" href="https://belotflorent.fr/src/assets/elipse-blue-blur.png" as="image" />
+  <link rel="icon" type="image/png" href="src/assets/branding/favicon.png" sizes="any">
+
+  <!-- Préchargement de l'image LCP en WebP -->
+  <link rel="preload" href="src/assets/elipse-blue-blur.webp" as="image" type="image/webp">
+
+  <!-- Préchargement de l'image LCP en PNG/JPEG pour les navigateurs non WebP -->
+  <link rel="preload" href="src/assets/elipse-blue-blur.png" as="image" type="image/png">
   
   <!-- Préchargement de la police Sora -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -29,13 +32,13 @@
   <meta property="og:title" content="Florent Belot | Développeur Full-Stack Freelance sur la métropole Lilloise - Création de Sites Web & Applications SaaS - TJM 250/j">
   <meta property="og:description" content="Florent Belot | Développeur Full-Stack Freelance sur la métropole Lilloise - Création de Sites Web & Applications SaaS - TJM 250/j">
   <meta property="og:url" content="https://belotflorent.fr/">
-  <meta property="og:image" content="https://belotflorent.fr/src/assets/profile_img.png">
+  <meta property="og:image" content="src/assets/profile_img.png">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Florent Belot | Développeur Full-Stack Freelance sur la métropole Lilloise - Création de Sites Web & Applications SaaS - TJM 250/j">
   <meta name="twitter:description" content="Florent Belot | Développeur Full-Stack Freelance sur la métropole Lilloise - Création de Sites Web & Applications SaaS - TJM 250/j">
-  <meta name="twitter:image" content="https://belotflorent.fr/src/assets/profile_img.png">
+  <meta name="twitter:image" content="src/assets/profile_img.png">
   
   <!-- Préconnexion au serveur des polices Google -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,12 +49,11 @@
   <!-- Styles en ligne pour les styles critiques -->
   <style>
     body {
-      background-color: #1a1a1a; 
-      color: #f5f5f5; 
+      background-color: #070E27; 
+      color: #FFFFFF; 
       font-family: 'Sora', sans-serif;
     }
   </style>
-
 </head>
 
 <body>
@@ -72,10 +74,10 @@
       "@type": "Person",
       "name": "Florent Belot",
       "url": "https://belotflorent.fr/",
-      "image": "https://belotflorent.fr/src/assets/profile_img.png",
+      "image": "src/assets/profile_img.png",
       "sameAs": [
         "https://www.linkedin.com/in/florent-belot/",
-        "https://github.com/florentbelot"
+        "https://github.com/OnaFlorent"
       ],
       "jobTitle": "Développeur Full-Stack Freelance",
       "worksFor": {
