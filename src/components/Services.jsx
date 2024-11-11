@@ -5,7 +5,7 @@ export const Services = () => {
   return (
     <div id="services">
       <Container>
-        <div className="max-w-5xl  mx-auto py-6 lg:py-12">
+        <div className="max-w-5xl mx-auto py-6 lg:py-12">
           <div className="space-y-4 mb-8 text-center lg:text-start">
             <h2 className="h2">Mes Services</h2>
             <p className="body-1 text-n-5">
@@ -18,15 +18,15 @@ export const Services = () => {
             {features.map((feature) => (
               <div
                 key={feature.id}
-                className="border-4 border-n-3 hover:bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate"
+                className="group border-4 border-n-3 hover:bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer"
               >
                 <img
                   src={feature.image}
                   alt={feature.alt}
                   width={48}
                   height={48}
-                  className="filter brightness-0 invert pointer-events-none"
-                ></img>
+                  className="filter brightness-0 invert animate group-hover:rotate-12"
+                />
                 <div className="space-y-4">
                   <h3 className="h4 bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                     {feature.title}
