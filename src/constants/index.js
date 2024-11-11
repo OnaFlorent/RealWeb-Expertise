@@ -120,7 +120,7 @@ export const features = [
     id: "2",
     alt: "Icon_api",
     image: icoCable,
-    title: "RESTful API",
+    title: "REST API",
     text: "Conception et développement d’API pour permettre l’interaction entre différentes applications logicielles de manière sûre et efficace, facilitant ainsi l’intégration des systèmes tiers.",
   },
   {

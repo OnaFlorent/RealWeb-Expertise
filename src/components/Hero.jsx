@@ -9,8 +9,8 @@ const Hero = () => {
   return (
     <div className="relative">
       <Container className="relative z-10 lg:py-16 space-y-16 max-w-7xl mx-auto px-4 md:px-6">
-        <div className="flex flex-col lg:flex-row lg:space-x-8 items-center lg:items-start lg:justify-between">
-          <div className="order-first mt-8 mb-8 lg:mt-0 lg:order-last">
+        <div className="flex flex-col lg:flex-row-reverse lg:space-x-reverse lg:space-x-8 items-center lg:items-start lg:justify-between">
+          <div className="mt-8 mb-8 lg:mt-0 lg:ml-6">
             <motion.div
               className="border-4 bg-n-8 rounded-xl lg:rounded-2xl p-8 space-y-8 cursor-pointer animate-border-animation"
               initial={{ opacity: 0, scale: 0.5 }}
@@ -41,7 +41,7 @@ const Hero = () => {
               </div>
             </motion.div>
           </div>
-          <div className="text-center lg:text-left max-w-3xl mx-auto lg:ml-6 space-y-7">
+          <div className="text-center lg:text-left max-w-3xl space-y-7">
             <h1 className="h1">
               <div className="flex flex-col">Bonjour!</div>
               <div>
