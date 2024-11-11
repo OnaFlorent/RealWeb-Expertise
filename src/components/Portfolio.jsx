@@ -39,9 +39,9 @@ export const Portfolio = () => {
                   decoding="async"
                 />
               </picture>
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-end items-end p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-end items-end p-4 opacity-0 transition-opacity animate group-hover:opacity-100">
                 <div className="text-right text-white space-y-1">
-                  <h3 className="h4">{work.title}</h3>
+                  <h4 className="h4">{work.title}</h4>
                   <p className="body-3">{work.technologies.join(" • ")}</p>
                 </div>
               </div>

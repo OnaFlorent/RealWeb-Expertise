@@ -52,7 +52,7 @@ export const Services = () => {
               height={24}
               className="filter brightness-0 invert pointer-events-none"
             />
-            <span className="text-n-5 body-2 whitespace-nowrap">
+            <span className="body-2 text-n-5 whitespace-nowrap">
               {service.title}
             </span>
           </div>

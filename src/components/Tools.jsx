@@ -8,14 +8,14 @@ export const Tools = () => {
         {tools.map((tool) => (
           <div
             key={tool.id}
-            className="flex flex-col items-center justify-center space-y-2"
+            className="group flex flex-col items-center justify-center space-y-2"
           >
             <img
               src={tool.image}
               alt={tool.alt}
-              className="w-16 h-16 lg:w-20 lg:h-20 opacity-60 hover:opacity-100 animate hover:scale-105 cursor-pointer"
+              className="w-16 h-16 lg:w-20 lg:h-20 opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-opacity animate cursor-pointer"
             />
-            <span className="body-1 text-n-5 text-center text-sm lg:text-base">
+            <span className="body-2 text-n-5 group-hover:text-n-3 group-hover:scale-105 transition-transform animate">
               {tool.title}
             </span>
           </div>
