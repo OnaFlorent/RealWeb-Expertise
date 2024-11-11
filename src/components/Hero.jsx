@@ -21,7 +21,7 @@ const Hero = () => {
                 <source srcSet={profileImgWebp} type="image/webp" />
                 <source srcSet={profileImgPng} type="image/png" />
                 <img
-                  src={profileImgPng} 
+                  src={profileImgPng}
                   alt="Profile"
                   className="mx-auto rounded-full border-4 border-n-1 border-opacity-50 pointer-events-none"
                   width={200}
@@ -59,7 +59,6 @@ const Hero = () => {
                 </span>
               </div>
             </h1>
-
             <p className="body-1 text-n-5">
               Développeur Full-Stack Freelance certifié en web et web mobile,
               basé dans la métropole lilloise, je mets{" "}
