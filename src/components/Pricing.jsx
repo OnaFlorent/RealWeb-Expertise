@@ -5,6 +5,7 @@ import { Container } from "./Container";
 import { CirclePlus, CircleMinus } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./Button";
+import { Services } from "./theme/Services";
 
 export const Pricing = () => {
   const visibleFeatureCount = 5;
@@ -66,7 +67,7 @@ export const Pricing = () => {
                           <img
                             src={feature.included ? icoCheck : icoUncheck}
                             alt={
-                              feature.included ? "Icon-check" : "Icon-uncheck"
+                              feature.included ? "Icon_check" : "Icon_uncheck"
                             }
                             width={24}
                             height={24}
@@ -126,6 +127,7 @@ export const Pricing = () => {
             );
           })}
         </div>
+        <Services />
       </Container>
     </div>
   );

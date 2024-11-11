@@ -74,6 +74,33 @@ export const tools = [
   },
 ];
 
+export const services = [
+  {
+    id: " 0",
+    title: "Disponible 7jours/7",
+  },
+  {
+    id: "1",
+    title: "Réponse en moins de 24h",
+  },
+  {
+    id: "2",
+    title: "Responsive"
+  },
+  {
+    id: "3",
+    title: "Support continu"
+  },
+  {
+    id: "4",
+    title: "Landing pages en 72h"
+  },
+  {
+    id: "5",
+    title: "Site vitrine en 48h"
+  }
+];
+
 export const features = [
   {
     id: "0",
