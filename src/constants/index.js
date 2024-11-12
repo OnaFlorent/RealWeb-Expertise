@@ -81,7 +81,7 @@ export const services = [
   },
   {
     id: "1",
-    title: "Réponse en moins de 24h",
+    title: "Réponse en moins de 48h",
   },
   {
     id: "2",
