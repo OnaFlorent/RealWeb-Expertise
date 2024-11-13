@@ -1,6 +1,5 @@
 // Design Elements
 import grid from "./grid.png";
-import elipseBlueBlur from "./elipse-blue-blur.png";
 
 // Illustrations
 import profileImg from "./hero/profile_img.png";
@@ -38,7 +37,6 @@ export {
   profileImg,
   logoApp,
   grid,
-  elipseBlueBlur,
   logoReact,
   logoNode,
   logoPostgre,
