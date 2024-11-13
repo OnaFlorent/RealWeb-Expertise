@@ -25,13 +25,13 @@ export const Services = () => {
                   alt={feature.alt}
                   width={48}
                   height={48}
-                  className="filter brightness-0 invert animate group-hover:rotate-12"
+                  className="filter brightness-0 invert group-hover:rotate-12 animate "
                 />
                 <div className="space-y-4">
-                  <h3 className="h4 bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
+                  <h3 className="h4 text-p-3 group-hover:text-n-1 animate">
                     {feature.title}
                   </h3>
-                  <p className="body-2 text-n-3">{feature.text}</p>
+                  <p className="body-2 text-n-5">{feature.text}</p>
                 </div>
               </div>
             ))}

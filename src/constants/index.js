@@ -85,20 +85,20 @@ export const services = [
   },
   {
     id: "2",
-    title: "Responsive"
+    title: "Responsive",
   },
   {
     id: "3",
-    title: "Support continu"
+    title: "Support continu",
   },
   {
     id: "4",
-    title: "Landing pages en 72h"
+    title: "Landing pages en 72h",
   },
   {
     id: "5",
-    title: "Site vitrine en 48h"
-  }
+    title: "Site vitrine en 48h",
+  },
 ];
 
 export const features = [
@@ -128,7 +128,7 @@ export const features = [
     alt: "Icon_settings",
     image: icoSettings,
     title: "Maintenance et mise à niveau des systèmes",
-    text: "A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts and visual mockups.",
+    text: "Services de maintenance et de mise à jour régulière des sites web et applications, assurant leur bon fonctionnement et la sécurité des données des utilisateurs.",
   },
   {
     id: "4",

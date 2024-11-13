@@ -4,7 +4,6 @@ import { Button } from "./Button";
 import { Container } from "./Container";
 import { Grid } from "./theme/Hero";
 import { motion } from "framer-motion";
-import { SparklesIcon } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -42,45 +41,38 @@ const Hero = () => {
               </div>
             </motion.div>
           </div>
-          <div className="text-center lg:text-left max-w-3xl space-y-5">
+          <div className="text-center lg:text-left max-w-3xl space-y-6">
             <h1 className="h1">
-              <div>
-                Je suis
-                <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
-                  {" "}
-                  Florent Belot
-                </span>
-                , Développeur Full-Stack{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
-                  Freelance
-                </span>
-              </div>
-            </h1>
-            <h2 className="h2">
-              Propulsez votre{" "}
+              Augmentez votre{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                 visibilité
               </span>{" "}
               grâce à un produit web{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
-                novateur
+                compétitif
               </span>
               !
-            </h2>
+            </h1>
             <p className="body-1 text-n-5">
-              Développeur certifié en web et web mobile, basé dans la métropole
-              lilloise, j'accompagne votre entreprise dans sa transition
-              digitale. Mon expertise Full-Stack est à votre service, pour des
-              projets sur-mesure allant du site vitrine aux solutions web
-              complexes. Ensemble, faisons briller votre présence en ligne !{" "}
-              <SparklesIcon
-                className="inline-block text-p-3 w-6 h-6 ml-1"
-                aria-label="Sparkles Icon"
-              />
+              Je suis <span className="text-n-1">Florent Belot</span>,
+              développeur Full-Stack Freelance certifié en web et mobile, basé
+              dans la métropole lilloise. J’accompagne vos projets numériques à
+              distance, quelle que soit leur envergure, en vous proposant des{" "}
+              <a href="/#services" className="text-n-1">
+                solutions sur mesure
+              </a>{" "}
+              adaptées à vos besoins.
             </p>
+            <p className="body-1 text-n-5">
+              Besoin d'une présence en ligne pour votre activité ? Que ce soit
+              pour un site vitrine ou une plateforme plus complexe, mon objectif
+              est de créer une vitrine numérique qui reflète parfaitement votre
+              entreprise et capte l'attention de vos clients.
+            </p>
+
             <div className="flex justify-center lg:justify-start space-x-4 mt-8">
               <Button theme="secondary" href="/#pricing">
-                Mes tarifs
+                Voir mes tarifs
               </Button>
               <Button theme="secondary" className="cursor-not-allowed">
                 Mon profil Malt
