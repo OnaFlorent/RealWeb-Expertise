@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="relative">
-      <Container className="relative z-10 lg:py-16 space-y-16 max-w-7xl mx-auto px-4 md:px-6">
+      <Container className="relative z-10 lg:py-16 space-y-16 max-w-7xl mx-auto px-4 md:px-6 pt-8">
         <div className="flex flex-col lg:flex-row-reverse lg:space-x-reverse lg:space-x-8 items-center lg:items-start lg:justify-between">
           <div className="mt-8 mb-8 lg:mt-0 lg:ml-6">
             <motion.div
@@ -43,7 +43,18 @@ const Hero = () => {
           </div>
           <div className="text-center lg:text-left max-w-3xl space-y-6">
             <h1 className="h1">
-              Augmentez votre{" "}
+              <div className="relative flex items-center justify-center lg:justify-start space-x-2">
+                <span
+                  className="block border-t-2 border-n-4 w-12 sm:w-20 md:w-28"
+                  aria-hidden="true"
+                ></span>
+                <span>Ensemble</span>
+                <span
+                  className="block border-t-2 border-n-4 w-12 sm:w-20 md:w-28"
+                  aria-hidden="true"
+                ></span>
+              </div>
+              Augmentons votre{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                 visibilité
               </span>{" "}
@@ -66,7 +77,7 @@ const Hero = () => {
             <p className="body-1 text-n-5">
               Besoin d'une présence en ligne pour votre activité ? Que ce soit
               pour un site vitrine ou une plateforme plus complexe, mon objectif
-              est de créer une vitrine numérique qui reflète parfaitement votre
+              est de créer une application numérique qui reflète parfaitement votre
               entreprise et capte l'attention de vos clients.
             </p>
 

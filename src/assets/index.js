@@ -13,7 +13,6 @@ import project3Webp from "./bullet-points/project-3.webp";
 import project4Webp from "./bullet-points/project-4.webp";
 
 // Logotypes
-import logoApp from "./branding/favicon.ico";
 import logoReact from "./branding/logo_react.svg";
 import logoNode from "./branding/logo_node.svg";
 import logoPostgre from "./branding/logo_postgre.svg";
@@ -35,7 +34,6 @@ import icoUncheck from "./ico/ico-uncheck.svg";
 
 export {
   profileImg,
-  logoApp,
   grid,
   logoReact,
   logoNode,
