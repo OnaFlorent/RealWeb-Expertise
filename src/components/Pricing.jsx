@@ -37,11 +37,12 @@ export const Pricing = () => {
                   <div className="text-caption-1 text-n-5 uppercase">
                     {price.plan}
                   </div>
+                  <span className="text-caption-1 text-n-5">À partir de </span>
                   <div className="space-y-3">
                     <span className="h1 text-n-5">€</span>
                     <span className="h1">{price.amount}*</span>
                   </div>
-                  <span className="text-caption-1 text-n-5">*à partir de </span>
+
                   <hr
                     className={`"border-t mt-7 mb-4 lg:mt-16"
                     ${price.featured ? "border-n-6" : "border-stroke-1"}`}

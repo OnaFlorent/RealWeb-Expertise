@@ -14,7 +14,7 @@ export const Header = () => {
               transition={{ duration: 0.3 }}
             >
               <a href="/" className="no-custom-hover">
-                RealWeb Studio
+                RealWeb Studio.
               </a>
             </motion.h4>
           </div>

@@ -9,7 +9,7 @@ export const Services = () => {
           <div className="space-y-4 mb-8 text-center lg:text-start">
             <h2 className="h2">Mes Services</h2>
             <p className="body-1 text-n-5">
-              Développeur full-stack investi et rigoureux, je vous accompagne
+              Développeur Full-Stack investi et rigoureux, je vous accompagne
               dans vos projets numériques avec des solutions fiables, pensées
               pour répondre à vos attentes.
             </p>

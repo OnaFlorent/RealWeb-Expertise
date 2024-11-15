@@ -19,8 +19,7 @@ function App() {
         </title>
         <meta
           name="description"
-          content="Florent Belot | Développeur Full-Stack Freelance sur la métropole Lilloise
-      - Création de Sites Web & Landing Page & Applications Web & SaaS - TJM 250/j"
+          content="Développeur Full-Stack freelance à Roubaix, concepteur de sites web et applications web et mobile, e-commerce, landing page et solutions numériques sur mesure."
         />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
