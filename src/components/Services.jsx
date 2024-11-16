@@ -28,7 +28,7 @@ export const Services = () => {
                   className="filter brightness-0 invert group-hover:rotate-12 animate "
                 />
                 <div className="space-y-4">
-                  <h3 className="h4 text-p-3 group-hover:text-n-1 animate">
+                  <h3 className="h4 text-n-1 animate">
                     {feature.title}
                   </h3>
                   <p className="body-2 text-n-5">{feature.text}</p>

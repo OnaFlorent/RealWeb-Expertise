@@ -1,3 +1,4 @@
+import { Handshake } from "lucide-react";
 import profileImgPng from "../../src/assets/hero/profile_img.png";
 import profileImgWebp from "../../src/assets/hero/profile_img.webp";
 import { Button } from "./Button";
@@ -43,12 +44,12 @@ const Hero = () => {
             <h1 className="h1">
               <div className="relative flex items-center justify-center lg:justify-start space-x-2">
                 <span
-                  className="block border-t-2 w-12 sm:w-20 md:w-28 animate-border-animation"
+                  className="block border-t-4 w-12 sm:w-20 md:w-28 animate-border-animation"
                   aria-hidden="true"
                 ></span>
                 <span>Ensemble</span>
                 <span
-                  className="block border-t-2 w-12 sm:w-20 md:w-28 animate-border-animation"
+                  className="block border-t-4 w-12 sm:w-20 md:w-28 animate-border-animation"
                   aria-hidden="true"
                 ></span>
               </div>
@@ -83,11 +84,11 @@ const Hero = () => {
             </p>
 
             <div className="flex justify-center lg:justify-start space-x-4 py-4">
-              <Button theme="secondary" href="/#pricing">
-                Mes tarifs
-              </Button>
               <Button theme="secondary" className="cursor-not-allowed">
                 Mon profil Malt
+              </Button>
+              <Button theme="secondary" href="/#pricing">
+                Mes tarifs
               </Button>
             </div>
           </div>
