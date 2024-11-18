@@ -13,9 +13,11 @@ export const Tools = () => {
             <img
               src={tool.image}
               alt={tool.alt}
-              className="w-16 h-16 lg:w-20 lg:h-20 opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-opacity animate cursor-pointer"
+              width={80} 
+              height={80} 
+              className="w-16 h-16 lg:w-20 lg:h-20 opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-transform cursor-pointer"
             />
-            <span className="body-2 text-n-5 group-hover:text-n-3 group-hover:scale-105 transition-transform animate">
+            <span className="body-2 text-n-5 group-hover:text-n-3 group-hover:scale-105 transition-transform">
               {tool.title}
             </span>
           </div>
