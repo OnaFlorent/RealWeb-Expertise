@@ -1,6 +1,7 @@
 import { works } from "../constants";
 import { Container } from "./Container";
 import { Headings } from "./Headings";
+import { motion } from "framer-motion";
 
 export const Portfolio = () => {
   return (
@@ -15,8 +16,8 @@ export const Portfolio = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 gap-5 lg:gap-10">
-          {works.map((work) => (
-            <div
+          {works.map((work, index) => (
+            <motion.div
               key={work.id}
               className={`relative overflow-hidden border-4 border-n-3 hover:border-p-3 rounded-xl lg:rounded-2xl group ${
                 work.url ? "cursor-pointer" : "cursor-default"
@@ -26,13 +27,23 @@ export const Portfolio = () => {
                   window.open(work.url, "_blank", "noopener noreferrer");
                 }
               }}
+              initial={{
+                opacity: 0,
+                x: index % 2 === 0 ? -50 : 50,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <picture>
                 <source srcSet={work.imageWebp} type="image/webp" />
                 <img
                   src={work.imagePng}
                   alt={work.alt}
-                  className="w-full h-full object-cover animate group-hover:scale-110 pointer-events-none"
+                  className="w-full h-full object-cover animate group-hover:scale-110 transition-transform pointer-events-none"
                   width="100%"
                   height="auto"
                   loading="lazy"
@@ -45,7 +56,7 @@ export const Portfolio = () => {
                   <p className="body-3">{work.technologies.join(" • ")}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
