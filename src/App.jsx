@@ -7,13 +7,14 @@ import { CallToAction } from "./components/CallToAction";
 import { Portfolio } from "./components/Portfolio";
 import { Pricing } from "./components/Pricing";
 import { FileDownIcon, FileUser } from "lucide-react";
+import FixedMenu from "./components/FixedMenu";
 
 function App() {
   return (
     <>
       <Header />
-
       <Hero />
+      <FixedMenu />
       <Tools />
       <Portfolio />
       <CallToAction
