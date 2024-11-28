@@ -3,21 +3,25 @@ import { Container } from "./Container";
 import { Headings } from "./Headings";
 import { motion } from "framer-motion";
 
+import { fadeInOnScroll } from "../motion/motionVariants";
+
 export const Portfolio = () => {
   return (
     <Container>
       <div className="max-w-5xl mx-auto py-6 lg:py-12">
-        <div className="space-y-4 mb-8 text-center lg:text-start">
+        <motion.div variants={fadeInOnScroll(0.2, 0.6)}
+          initial="hidden"
+          whileInView="visible" className="space-y-4 mb-8 text-center lg:text-start">
           <Headings title="RealWeb Studio" subtitle="Mon portfolio" />
           <p className="body-1 text-n-5">
             Découvrez mes derniers projets, réalisés avec une panoplie d'outils
             issus de ma veille technologique constante, pour répondre au mieux à
             vos besoins numériques.
           </p>
-        </div>
+        </motion.div>
         <div className="grid sm:grid-cols-2 gap-5 lg:gap-10">
           {works.map((work, index) => (
-            <motion.div
+            <div
               key={work.id}
               className={`relative overflow-hidden border-4 border-n-3 hover:border-p-3 rounded-xl lg:rounded-2xl group ${
                 work.url ? "cursor-pointer" : "cursor-default"
@@ -27,16 +31,6 @@ export const Portfolio = () => {
                   window.open(work.url, "_blank", "noopener noreferrer");
                 }
               }}
-              initial={{
-                opacity: 0,
-                x: index % 2 === 0 ? -50 : 50,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <picture>
                 <source srcSet={work.imageWebp} type="image/webp" />
@@ -56,7 +50,7 @@ export const Portfolio = () => {
                   <p className="body-3">{work.technologies.join(" • ")}</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

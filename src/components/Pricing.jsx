@@ -11,7 +11,7 @@ export const Pricing = () => {
   const visibleFeatureCount = 5;
 
   return (
-    <div id="pricing">
+    <section id="pricing">
       <div className="py-5 lg:py-10">
         <div className="caption-1 text-n-5 text-center uppercase">
           RealWeb Studio
@@ -33,7 +33,7 @@ export const Pricing = () => {
         </div>
         <Services />
       </Container>
-    </div>
+    </section>
   );
 };
 

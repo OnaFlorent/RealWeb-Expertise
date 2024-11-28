@@ -2,18 +2,34 @@ import { Container } from "./Container";
 import { tools } from "../constants";
 import { motion } from "framer-motion";
 
+import { fadeInOnScroll } from "../motion/motionVariants";
+
+const iconAnimation = {
+  initial: {
+    opacity: 0,
+    scale: 0.8,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
+};
+
 export const Tools = () => {
   return (
     <Container>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 max-w-6xl w-full mx-auto py-8 lg:py-12">
-        {tools.map((tool) => (
+      <section className="flex flex-wrap justify-center gap-6 max-w-6xl w-full mx-auto py-8 lg:py-12">
+        {tools.map((tool, index) => (
           <motion.div
             key={tool.id}
-            className="group flex flex-col items-center justify-center space-y-2"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="group flex flex-col items-center justify-center space-y-2 w-[calc(50%-1rem)] md:w-[calc(25%-1rem)] lg:w-[calc(12.5%-1rem)]"
+            custom={index}
+            variants={iconAnimation}
+            initial="initial"
+            whileInView="animate"
           >
             <motion.img
               src={tool.image}
@@ -31,7 +47,7 @@ export const Tools = () => {
             </motion.span>
           </motion.div>
         ))}
-      </div>
+      </section>
     </Container>
   );
 };

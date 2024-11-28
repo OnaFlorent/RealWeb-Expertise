@@ -1,6 +1,3 @@
-// Design Elements
-import grid from "./grid.png";
-
 // Illustrations
 import profileImg from "./hero/profile_img.png";
 import project1Png from "./bullet-points/project-1.png";
@@ -34,7 +31,6 @@ import icoUncheck from "./ico/ico-uncheck.svg";
 
 export {
   profileImg,
-  grid,
   logoReact,
   logoNode,
   logoPostgre,

@@ -38,15 +38,18 @@ export default {
       keyframes: {
         borderAnimation: {
           "0%": {
-            borderColor: "#FFFFFF", 
+            borderColor: "#FFFFFF",
           },
           "50%": {
-            borderColor: "#3B82F6", 
+            borderColor: "#3B82F6",
           },
           "100%": {
-            borderColor: "#FFFFFF", 
+            borderColor: "#FFFFFF",
           },
         },
+      },
+      backgroundImage: {
+        body: "url('src/assets/body-bg.png')",
       },
     },
   },

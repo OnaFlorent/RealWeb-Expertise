@@ -13,7 +13,7 @@
 
 @layer base {
   body {
-    @apply bg-n-9 text-n-1 text-base;
+    @apply bg-body bg-cover bg-no-repeat text-n-1 text-base;
     font-family: var(--font-sora);
   }
 }

@@ -3,7 +3,7 @@ import { Container } from "./Container";
 
 export const Footer = () => {
   return (
-    <div className="bg-n-7 py-5 lg:py-12 mt-5 lg:mt-16">
+    <footer className="bg-n-7 py-5 lg:py-12 mt-5 lg:mt-16">
       <Container className="flex flex-col items-center justify-center gap-3 lg:gap-1 text-center body-3 text-n-3">
         <div className="flex items-center gap-4 justify-center">
           <a
@@ -33,6 +33,6 @@ export const Footer = () => {
           - Tous droits réservés.
         </div>
       </Container>
-    </div>
+    </footer>
   );
 };

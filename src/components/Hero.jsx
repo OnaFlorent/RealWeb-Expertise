@@ -2,20 +2,18 @@ import profileImgPng from "../../src/assets/hero/profile_img.png";
 import profileImgWebp from "../../src/assets/hero/profile_img.webp";
 import { Button } from "./Button";
 import { Container } from "./Container";
-import { Grid } from "./theme/Hero";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
+import { fadeInOnScroll } from "../motion/motionVariants";
+
 const Hero = () => {
   return (
-    <div className="relative">
-      <Container className="relative ax-w-7xl z-10 py-16 space-y-12 xl:space-y-6 mmx-auto px-4 md:px-6">
+    <section className="relative">
+      <Container className="max-w-7xl py-16 space-y-12 xl:space-y-6 mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-12">
-          <motion.div
-            className="border-4 bg-n-8 rounded-xl p-8 animate-border-animation"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}
+          <div
+            className="border-4 rounded-xl p-8 animate-border-animation"
           >
             <picture>
               <source srcSet={profileImgWebp} type="image/webp" />
@@ -28,18 +26,15 @@ const Hero = () => {
                 decoding="async"
               />
             </picture>
-          </motion.div>
+          </div>
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 0.3, duration: 0.8, ease: "easeInOut" },
-            }}
+            variants={fadeInOnScroll(0.2, 0.6)}
+            initial="hidden"
+            whileInView="visible"
             className="text-center max-w-3xl space-y-8"
           >
             <div
-              className="h1 flex flex-col items-center space-y-4"
+              className="h2 flex flex-col items-center space-y-4"
               role="heading"
               aria-level="1"
             >
@@ -54,7 +49,7 @@ const Hero = () => {
                   aria-hidden="true"
                 ></span>
               </div>
-              <h1 className="text-[1.75rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-bold leading-snug">
+              <h1 className="h font-bold leading-snug">
                 Augmentons votre{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                   visibilité
@@ -64,11 +59,11 @@ const Hero = () => {
                   <TypeAnimation
                     preRenderFirstString={true}
                     sequence={[
-                      "compétitif",
+                      "compétitif !",
                       2000,
-                      "innovant",
+                      "innovant !",
                       2000,
-                      "performant",
+                      "performant !",
                       2000,
                     ]}
                     speed={50}
@@ -77,8 +72,7 @@ const Hero = () => {
                     cursor={false}
                     className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2"
                   />
-                </span>{" "}
-                !
+                </span>
               </h1>
             </div>
             <p className="body-1 text-n-5">
@@ -115,8 +109,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </Container>
-      <Grid />
-    </div>
+    </section>
   );
 };
 
