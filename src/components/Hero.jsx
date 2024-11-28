@@ -11,9 +11,12 @@ const Hero = () => {
   return (
     <section className="relative">
       <Container className="max-w-7xl py-16 space-y-12 xl:space-y-6 mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center space-y-12">
-          <div
-            className="border-4 rounded-xl p-8 animate-border-animation"
+        <div className="flex flex-col items-center">
+          <motion.div
+            variants={fadeInOnScroll(0.2, 0.6)}
+            initial="hidden"
+            whileInView="visible"
+            className="border-4 rounded-xl p-6 animate-border-animation mb-8"
           >
             <picture>
               <source srcSet={profileImgWebp} type="image/webp" />
@@ -21,17 +24,17 @@ const Hero = () => {
               <img
                 src={profileImgPng}
                 alt="Profile"
-                className="mx-auto rounded-full border-4 border-n-1 border-opacity-50 w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] lg:w-[180px] lg:h-[180px]"
+                className="mx-auto rounded-full border-4 border-n-1 border-opacity-50 w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] lg:w-[180px] lg:h-[180px]"
                 loading="lazy"
                 decoding="async"
               />
             </picture>
-          </div>
+          </motion.div>
           <motion.div
-            variants={fadeInOnScroll(0.2, 0.6)}
+            variants={fadeInOnScroll(0.2, 0.7)}
             initial="hidden"
             whileInView="visible"
-            className="text-center max-w-3xl space-y-8"
+            className="text-center max-w-4xl space-y-8"
           >
             <div
               className="h2 flex flex-col items-center space-y-4"
@@ -49,12 +52,12 @@ const Hero = () => {
                   aria-hidden="true"
                 ></span>
               </div>
-              <h1 className="h font-bold leading-snug">
+              <h1 className="h1 font-bold leading-snug tracking-tight max-w-full sm:max-w-3xl mx-auto">
                 Augmentons votre{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                   visibilité
                 </span>{" "}
-                grâce à un produit web{" "}
+                avec un produit web{" "}
                 <span className="block sm:inline">
                   <TypeAnimation
                     preRenderFirstString={true}

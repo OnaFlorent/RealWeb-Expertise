@@ -18,6 +18,8 @@ import logoPhp from "./branding/logo_php.svg";
 import logoTypeScript from "./branding/logo_typescript.svg";
 import logoMongo from "./branding/logo_mongodb.svg";
 import logoFirebase from "./branding/logo_firebase.svg";
+import logoNextJs from "./branding/logo_nextjs.svg";
+import logoFigma from "./branding/logo_figma.svg";
 
 // Icons
 import icoSmartphone from "./ico/ico-smartphone.svg";
@@ -39,6 +41,8 @@ export {
   logoTypeScript,
   logoMongo,
   logoFirebase,
+  logoFigma,
+  logoNextJs,
   icoSmartphone,
   icoGlobe,
   icoDatabase,

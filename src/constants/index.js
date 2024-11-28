@@ -21,6 +21,8 @@ import {
   logoTypeScript,
   logoMongo,
   logoFirebase,
+  logoFigma,
+  logoNextJs,
 } from "../assets";
 
 export const tools = [
@@ -56,18 +58,30 @@ export const tools = [
   },
   {
     id: "5",
+    alt: "Logo_figma",
+    image: logoFigma,
+    title: "FIGMA",
+  },
+  {
+    id: "6",
     alt: "Logo_type_scipt",
     image: logoTypeScript,
     title: "TYPESCRIPT",
   },
   {
-    id: "6",
+    id: "7",
+    alt: "Logo_next",
+    image: logoNextJs,
+    title: "NEXTJS",
+  },
+  {
+    id: "8",
     alt: "Logo_mongo",
     image: logoMongo,
     title: "MONGODB",
   },
   {
-    id: "7",
+    id: "9",
     alt: "Logo_firebase",
     image: logoFirebase,
     title: "FIREBASE",

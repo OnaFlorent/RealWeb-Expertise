@@ -9,9 +9,12 @@ export const Portfolio = () => {
   return (
     <Container>
       <div className="max-w-5xl mx-auto py-6 lg:py-12">
-        <motion.div variants={fadeInOnScroll(0.2, 0.6)}
+        <motion.div
+          variants={fadeInOnScroll(0.2, 0.6)}
           initial="hidden"
-          whileInView="visible" className="space-y-4 mb-8 text-center lg:text-start">
+          whileInView="visible"
+          className="space-y-4 mb-8 text-center lg:text-start"
+        >
           <Headings title="RealWeb Studio" subtitle="Mon portfolio" />
           <p className="body-1 text-n-5">
             Découvrez mes derniers projets, réalisés avec une panoplie d'outils
@@ -19,7 +22,12 @@ export const Portfolio = () => {
             vos besoins numériques.
           </p>
         </motion.div>
-        <div className="grid sm:grid-cols-2 gap-5 lg:gap-10">
+        <motion.div
+          variants={fadeInOnScroll(0.2, 0.8)}
+          initial="hidden"
+          whileInView="visible"
+          className="grid sm:grid-cols-2 gap-5 lg:gap-10"
+        >
           {works.map((work, index) => (
             <div
               key={work.id}
@@ -52,7 +60,7 @@ export const Portfolio = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </Container>
   );
