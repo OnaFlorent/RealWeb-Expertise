@@ -49,7 +49,7 @@ export default {
         },
       },
       backgroundImage: {
-        body: "url('src/assets/body-bg.png')",
+        body: "url('/body-bg.webp')",
       },
     },
   },

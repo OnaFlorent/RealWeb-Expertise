@@ -4,17 +4,24 @@
 
 :root {
   --font-sora: "Sora", sans-serif;
-  color-scheme: dark; /* Using the default dark mode. */
+  color-scheme: dark; 
 }
 
 * {
-  scroll-behavior: smooth; /* Scrolling towards a target element is smooth and progressive. */
+  scroll-behavior: smooth;
 }
 
 @layer base {
   body {
-    @apply bg-body bg-cover bg-no-repeat text-n-1 text-base;
+    background-image: url('/body-bg.png');
+    @apply bg-cover bg-no-repeat text-n-1 text-base;
     font-family: var(--font-sora);
+  }
+
+  @supports (background-image: url('/body-bg.webp')) {
+    body {
+      background-image: url('/body-bg.webp'); 
+    }
   }
 }
 
