@@ -1,6 +1,9 @@
 import React from "react";
 import { Container } from "./Container";
 import { Button } from "./Button";
+import { motion } from "framer-motion";
+
+import { fadeInOnScroll } from "../motion/motionVariants";
 
 export const CallToAction = ({
   minify,
@@ -12,7 +15,12 @@ export const CallToAction = ({
 }) => {
   return (
     <Container>
-      <div className="max-w-4xl mx-auto py-5 lg:py-10">
+      <motion.div
+        variants={fadeInOnScroll(0.2, 0.6)}
+        initial="hidden"
+        whileInView="visible"
+        className="max-w-4xl mx-auto py-5 lg:py-10"
+      >
         <div
           className={`flex flex-col items-center rounded-xl lg:rounded-2xl bg-gradient-to-tl from-p-3 to-p-4 p-6 lg:p-12 gap-8
             ${
@@ -41,7 +49,7 @@ export const CallToAction = ({
             <span>{buttonText}</span>
           </Button>
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 };

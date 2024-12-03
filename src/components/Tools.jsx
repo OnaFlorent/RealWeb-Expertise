@@ -2,8 +2,6 @@ import { Container } from "./Container";
 import { tools } from "../constants";
 import { motion } from "framer-motion";
 
-import { fadeInOnScroll } from "../motion/motionVariants";
-
 const iconAnimation = {
   initial: {
     opacity: 0,

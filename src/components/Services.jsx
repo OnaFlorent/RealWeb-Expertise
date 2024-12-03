@@ -2,19 +2,26 @@ import { features } from "../constants";
 import { Container } from "./Container";
 import { motion } from "framer-motion";
 
+import { fadeInOnScroll } from "../motion/motionVariants";
+
 export const Services = () => {
   return (
-    <div id="services">
+    <section id="services">
       <Container>
         <div className="max-w-5xl mx-auto py-6 lg:py-12">
-          <div className="space-y-4 mb-8 text-center lg:text-start">
+          <motion.div
+            variants={fadeInOnScroll(0.2, 0.6)}
+            initial="hidden"
+            whileInView="visible"
+            className="space-y-4 mb-8 text-center lg:text-start"
+          >
             <h2 className="h2">Mes Services</h2>
             <p className="body-1 text-n-5">
               Développeur Full-Stack investi et rigoureux, je vous accompagne
               dans vos projets numériques avec des solutions fiables, pensées
               pour répondre à vos attentes.
             </p>
-          </div>
+          </motion.div>
           <motion.div
             className="grid sm:grid-cols-2 gap-5 lg:gap-10"
             initial="hidden"
@@ -33,9 +40,12 @@ export const Services = () => {
                   scale: 1.05,
                   transition: { duration: 0.3 },
                 }}
+                whileInView="visible"
+                initial="hidden"
+                viewport={{ once: false, amount: 0.2 }}
                 variants={{
                   hidden: { opacity: 0, y: 50 },
-                  visible: { opacity: 1, y: 0 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
                 }}
               >
                 <motion.img
@@ -55,6 +65,6 @@ export const Services = () => {
           </motion.div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };

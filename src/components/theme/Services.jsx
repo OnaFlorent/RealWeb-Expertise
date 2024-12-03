@@ -1,50 +1,21 @@
 import { services } from "../../constants";
 import { icoCheck } from "../../assets";
-import { motion, useAnimation } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 export const Services = () => {
-  const controls = useAnimation();
-  const [isHovered, setIsHovered] = useState(false);
-
-  useEffect(() => {
-    controls.start({
-      x: ["0%", "-50%"], 
-      transition: {
-        duration: 30,
-        ease: "linear",
-        repeat: Infinity,
-      },
-    });
-  }, [controls]);
-
-  useEffect(() => {
-    if (isHovered) {
-      controls.stop(); 
-    } else {
-      controls.start({
-        x: ["0%", "-50%"],
-        transition: {
-          duration: 30,
-          ease: "linear",
-          repeat: Infinity,
-        },
-      }); 
-    }
-  }, [isHovered, controls]);
-
   return (
-    <div
-      className="overflow-hidden py-5"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <div className="overflow-hidden py-5">
       <motion.div
-        animate={controls}
-        className="flex space-x-10 sm:space-x-14 lg:space-x-20 w-max py-2"
+        initial={{ x: 0 }}
+        animate={{ x: "-50%" }} 
+        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+        className="flex space-x-10 w-[200%] sm:space-x-14 lg:space-x-20  py-2"
       >
         {[...services, ...services].map((service, index) => (
-          <div key={`${service.id}-${index}`} className="flex items-center space-x-2 px-4">
+          <div
+            key={`${service.id}-${index}`}
+            className="flex items-center space-x-2 px-4"
+          >
             <img
               src={icoCheck}
               alt="Icon_check"

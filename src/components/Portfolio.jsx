@@ -8,7 +8,7 @@ import { fadeInOnScroll } from "../motion/motionVariants";
 export const Portfolio = () => {
   return (
     <Container>
-      <div className="max-w-5xl mx-auto py-6 lg:py-12">
+      <section className="max-w-5xl mx-auto py-6 lg:py-12">
         <motion.div
           variants={fadeInOnScroll(0.2, 0.6)}
           initial="hidden"
@@ -22,18 +22,24 @@ export const Portfolio = () => {
             vos besoins numériques.
           </p>
         </motion.div>
-        <motion.div
-          variants={fadeInOnScroll(0.2, 0.8)}
-          initial="hidden"
-          whileInView="visible"
-          className="grid sm:grid-cols-2 gap-5 lg:gap-10"
-        >
-          {works.map((work, index) => (
-            <div
+        <div className="grid sm:grid-cols-2 gap-5 lg:gap-10">
+          {works.map((work) => (
+            <motion.div
               key={work.id}
               className={`relative overflow-hidden border-4 border-n-3 hover:border-p-3 rounded-xl lg:rounded-2xl group ${
                 work.url ? "cursor-pointer" : "cursor-default"
               }`}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.2 }}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.6, ease: "easeOut" },
+                },
+              }}
               onClick={() => {
                 if (work.url) {
                   window.open(work.url, "_blank", "noopener noreferrer");
@@ -58,10 +64,10 @@ export const Portfolio = () => {
                   <p className="body-3">{work.technologies.join(" • ")}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </motion.div>
-      </div>
+        </div>
+      </section>
     </Container>
   );
 };
