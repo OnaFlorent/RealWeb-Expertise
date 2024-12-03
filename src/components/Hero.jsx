@@ -37,7 +37,7 @@ const Hero = () => {
               whileInView="visible"
             >
               <div
-                className="h2 flex flex-col items-center space-y-4"
+                className="h2 flex flex-col items-center space-y-6"
                 role="heading"
                 aria-level="1"
               >
@@ -78,7 +78,7 @@ const Hero = () => {
                   </span>
                 </h1>
               </div>
-              <p className="body-1 text-n-5">
+              <p className="body-1 text-n-5 mt-6">
                 Je suis <span className="text-n-1">Florent Belot</span>,
                 développeur Full-Stack Freelance certifié en web et mobile, basé
                 dans la métropole lilloise. J’accompagne vos projets numériques
@@ -89,7 +89,7 @@ const Hero = () => {
                 </a>{" "}
                 adaptées à vos besoins.
               </p>
-              <p className="body-1 text-n-5">
+              <p className="body-1 text-n-5 mt-4">
                 Besoin d'une <span className="text-n-1">présence en ligne</span>{" "}
                 pour votre activité ? Que ce soit pour un site vitrine ou une
                 plateforme plus complexe, mon objectif est de créer une
@@ -108,7 +108,7 @@ const Hero = () => {
                 duration: 0.4,
                 ease: [0.6, -0.5, 0.01, 0.99],
                 type: "spring",
-                stiffness: 100,
+                stiffness: 80,
               }}
               className="flex justify-center space-x-4 py-4"
             >
