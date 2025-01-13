@@ -32,6 +32,7 @@ export const Footer = () => {
           </a>
           - Tous droits réservés.
         </div>
+        <div>SIREN: 939549424</div>
       </Container>
     </footer>
   );

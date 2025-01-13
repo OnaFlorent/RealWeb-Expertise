@@ -1,0 +1,16 @@
+{
+    "name": "RealWeb Studio",
+    "short_name": "RealWeb Studio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#070E27",
+    "icons": [
+      {
+        "src": "/favicon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  

@@ -112,11 +112,7 @@ const Hero = () => {
               }}
               className="flex justify-center space-x-4 py-4"
             >
-              <Button
-                theme="primary"
-                href="https://forms.gle/SQePZgWNcg5ucBB97"
-                target="_blank"
-              >
+              <Button theme="primary" href="mailto:florent.belot.dev@gmail.com">
                 Prendre contact
               </Button>
               <Button theme="secondary" className="cursor-not-allowed">
