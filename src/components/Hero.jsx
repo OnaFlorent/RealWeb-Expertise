@@ -115,7 +115,12 @@ const Hero = () => {
               <Button theme="primary" href="mailto:florent.belot.dev@gmail.com">
                 Prendre contact
               </Button>
-              <Button theme="secondary" className="cursor-not-allowed">
+              <Button
+                theme="secondary"
+                href="https://www.malt.fr/profile/florentbelot"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Mon profil Malt
               </Button>
             </motion.div>
