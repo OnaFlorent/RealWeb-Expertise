@@ -38,7 +38,7 @@ function App() {
         image={
           <FileUser width={24} height={24} alt="Google_form" className="mr-2" />
         }
-        buttonText="Prendre contact"
+        buttonText="Élaborer un devis"
         buttonLink="https://forms.gle/SQePZgWNcg5ucBB97"
       />
 

@@ -121,10 +121,10 @@ const PricingCard = ({ price, visibleFeatureCount }) => {
         <div className="flex justify-center space-x-4 mt-6">
           <Button
             theme="primary"
-            href="https://forms.gle/SQePZgWNcg5ucBB97"
+            href="https://calendly.com/florent-belot-dev/premier-echange"
             target="_blank"
           >
-            Élaborer un devis
+            Réserver un appel
           </Button>
         </div>
         <hr
