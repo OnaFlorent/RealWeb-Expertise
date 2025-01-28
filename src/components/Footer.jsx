@@ -27,7 +27,7 @@ export const Footer = () => {
         </div>
         <div>
           © 2024{" "}
-          <a href="/" title="RealWeb Studio" rel="noopener noreferrer">
+          <a href="mailto:florent.belot.dev@gmail.com" title="RealWeb Studio" rel="noopener noreferrer">
             RealWeb Studio{" "}
           </a>
           - Tous droits réservés.

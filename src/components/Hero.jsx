@@ -3,7 +3,6 @@ import profileImgWebp from "../../src/assets/hero/profile_img.webp";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 
 import { fadeInOnScroll } from "../motion/motionVariants";
 
@@ -52,29 +51,14 @@ const Hero = () => {
                     aria-hidden="true"
                   ></span>
                 </div>
-                <h1 className="h1 font-bold leading-snug tracking-tight max-w-full sm:max-w-3xl mx-auto">
+                <h1 className="h1 font-bold leading-snug tracking-tight max-w-full mx-auto">
                   Augmentons votre{" "}
                   <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
                     visibilité
                   </span>{" "}
                   avec un produit web{" "}
-                  <span className="block sm:inline">
-                    <TypeAnimation
-                      preRenderFirstString={true}
-                      sequence={[
-                        "compétitif !",
-                        2000,
-                        "innovant !",
-                        2000,
-                        "performant !",
-                        2000,
-                      ]}
-                      speed={50}
-                      repeat={Infinity}
-                      wrapper="span"
-                      cursor={false}
-                      className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2"
-                    />
+                  <span className="bg-clip-text text-transparent bg-gradient-to-b from-p-3 to-p-2">
+                    compétitif et innovant !
                   </span>
                 </h1>
               </div>
@@ -112,8 +96,13 @@ const Hero = () => {
               }}
               className="flex justify-center space-x-4 py-4"
             >
-              <Button theme="primary" href="mailto:florent.belot.dev@gmail.com">
-                Prendre contact
+              <Button
+                theme="primary"
+                href="https://calendly.com/florent-belot-dev/premier-echange"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Réserver un appel
               </Button>
               <Button
                 theme="secondary"

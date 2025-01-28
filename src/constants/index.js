@@ -217,7 +217,7 @@ export const pricing = [
   {
     id: "0",
     plan: "Basique | Express",
-    amount: 300,
+    amount: 349,
     featured: false,
     features: [
       { description: "Élaboration du cahier des charges.", included: true },
@@ -241,7 +241,7 @@ export const pricing = [
   {
     id: "1",
     plan: "Populaire",
-    amount: 600,
+    amount: 629,
     featured: true,
     features: [
       { description: "Élaboration du cahier des charges.", included: true },
@@ -268,7 +268,7 @@ export const pricing = [
   {
     id: "2",
     plan: "Premium",
-    amount: 1000,
+    amount: 1049,
     featured: false,
     features: [
       { description: "Élaboration du cahier des charges.", included: true },
@@ -290,6 +290,6 @@ export const pricing = [
       { description: "Maintenance ***", included: true },
       { description: "Jusqu'à 3 réajustements", included: true },
     ],
-    text: "Conception web premium: un site web unique avec plusieurs pages, entièrement personnalisé pour vous !",
+    text: "Conception web premium : Un site web unique avec plusieurs pages, entièrement personnalisé pour vous !",
   },
 ];
