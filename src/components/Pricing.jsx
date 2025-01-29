@@ -134,8 +134,8 @@ const PricingCard = ({ price, visibleFeatureCount }) => {
         />
         <div className="flex flex-col justify-center text-center items-center text-xs text-n-3">
           <span>* Tarifs hors options</span>
-          <span>** Offert la première année, puis €19/an</span>
-          <span>*** Offert la première année, puis à partir de €29/an</span>
+          <span>** Offert la première année, puis €29/an</span>
+          <span>*** Inclus la première année, puis à partir de €39/an</span>
         </div>
       </div>
     </motion.div>
