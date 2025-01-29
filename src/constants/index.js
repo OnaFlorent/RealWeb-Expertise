@@ -24,6 +24,7 @@ import {
   logoFigma,
   logoNextJs,
   logoWordPress,
+  logoPrestashop,
 } from "../assets";
 
 export const tools = [
@@ -65,30 +66,36 @@ export const tools = [
   },
   {
     id: "6",
+    alt: "Logo_prestashop",
+    image: logoPrestashop,
+    title: "PRESTASHOP",
+  },
+  {
+    id: "7",
     alt: "Logo_type_scipt",
     image: logoTypeScript,
     title: "TYPESCRIPT",
   },
   {
-    id: "7",
+    id: "8",
     alt: "Logo_next",
     image: logoNextJs,
     title: "NEXTJS",
   },
   {
-    id: "8",
+    id: "9",
     alt: "Logo_mongo",
     image: logoMongo,
     title: "MONGODB",
   },
   {
-    id: "9",
+    id: "10",
     alt: "Logo_firebase",
     image: logoFirebase,
     title: "FIREBASE",
   },
   {
-    id: "10",
+    id: "11",
     alt: "Logo_wordpress",
     image: logoWordPress,
     title: "WORDPRESS",
