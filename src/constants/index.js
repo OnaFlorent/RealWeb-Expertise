@@ -23,6 +23,7 @@ import {
   logoFirebase,
   logoFigma,
   logoNextJs,
+  logoWordPress,
 } from "../assets";
 
 export const tools = [
@@ -85,6 +86,12 @@ export const tools = [
     alt: "Logo_firebase",
     image: logoFirebase,
     title: "FIREBASE",
+  },
+  {
+    id: "10",
+    alt: "Logo_wordpress",
+    image: logoWordPress,
+    title: "WORDPRESS",
   },
 ];
 
@@ -163,14 +170,14 @@ export const features = [
 export const works = [
   {
     id: "0",
-    alt: "Img_cleanthis",
-    imagePng: project1Png,
-    imageWebp: project1Webp,
+    alt: "Img_serene_beaute",
+    imagePng: project4Png,
+    imageWebp: project4Webp,
     width: 550,
     height: 300,
-    title: "CleanThis! Projet final DWWM",
-    technologies: ["Symfony", "MySQL", "React", "NodeJS", "MongoDB"],
-    url: "https://github.com/maxcottel24/cleanthis",
+    title: "Template Serene Beauté",
+    technologies: ["Next.js", "TypeScript", "Tailwind"],
+    url: "https://initiation-nextjs.vercel.app/",
   },
   {
     id: "1",
@@ -196,20 +203,14 @@ export const works = [
   },
   {
     id: "3",
-    alt: "Img_cra",
-    imagePng: project4Png,
-    imageWebp: project4Webp,
+    alt: "Img_cleanthis",
+    imagePng: project1Png,
+    imageWebp: project1Webp,
     width: 550,
     height: 300,
-    title: "Projet compte rendu d'activité",
-    technologies: [
-      "React",
-      "NodeJS",
-      "MySQL",
-      "Express",
-      "TypeScript",
-      "Tailwind",
-    ],
+    title: "CleanThis! Projet final DWWM",
+    technologies: ["Symfony", "MySQL", "React", "NodeJS", "MongoDB"],
+    url: "https://github.com/maxcottel24/cleanthis",
   },
 ];
 

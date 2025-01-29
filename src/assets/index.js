@@ -20,6 +20,7 @@ import logoMongo from "./branding/logo_mongodb.svg";
 import logoFirebase from "./branding/logo_firebase.svg";
 import logoNextJs from "./branding/logo_nextjs.svg";
 import logoFigma from "./branding/logo_figma.svg";
+import logoWordPress from "./branding/logo_wordpress.svg";
 
 // Icons
 import icoSmartphone from "./ico/ico-smartphone.svg";
@@ -43,6 +44,7 @@ export {
   logoFirebase,
   logoFigma,
   logoNextJs,
+  logoWordPress,
   icoSmartphone,
   icoGlobe,
   icoDatabase,
