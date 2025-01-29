@@ -241,7 +241,7 @@ export const pricing = [
   {
     id: "1",
     plan: "Populaire",
-    amount: 629,
+    amount: 639,
     featured: true,
     features: [
       { description: "Élaboration du cahier des charges.", included: true },
