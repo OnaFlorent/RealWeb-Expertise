@@ -26,7 +26,7 @@ export const Footer = () => {
           </a>
         </div>
         <div>
-          © 2024{" "}
+          © 2025{" "}
           <a href="mailto:florent.belot.dev@gmail.com" title="RealWeb Studio" rel="noopener noreferrer">
             RealWeb Studio{" "}
           </a>
