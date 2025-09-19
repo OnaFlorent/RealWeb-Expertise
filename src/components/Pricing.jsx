@@ -54,12 +54,12 @@ const PricingCard = ({ price, visibleFeatureCount }) => {
           price.featured ? "bg-n-7" : "bg-n-8"
         } rounded-xl lg:rounded-2xl p-6 lg:p-12 text-center lg:text-start lg:transition-transform lg:transform lg:hover:scale-105 lg:hover:shadow-lg`}
       >
-        <div className="text-caption-1 text-n-5 uppercase">{price.plan}</div>
-        <span className="text-caption-1 text-n-5">À partir de </span>
+        <div className="h4 text-caption-1 text-n-5 uppercase">{price.plan}</div>
+        {/* <span className="text-caption-1 text-n-5">À partir de </span>
         <div className="space-y-3">
           <span className="h1 text-n-5">€</span>
           <span className="h1">{price.amount}*</span>
-        </div>
+        </div> */}
 
         <hr
           className={`border-t mt-7 mb-4 lg:mt-16 ${
